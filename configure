@@ -1,6 +1,8 @@
 #!/bin/zsh
 
+START_DIR="$PWD"
 cd `dirname $0`
+
 git pull origin master
 
 rsync --exclude ".git" \
@@ -9,4 +11,5 @@ rsync --exclude ".git" \
       -av . ~
 
 source ~/.zshrc
-cd
+
+cd $START_DIR
