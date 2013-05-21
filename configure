@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-START_DIR="$PWD"
 cd `dirname $0`
 
 git pull origin master
@@ -13,4 +12,4 @@ rsync --exclude ".git" \
 
 source ~/.zshrc
 
-cd $START_DIR
+cd $OLDPWD
