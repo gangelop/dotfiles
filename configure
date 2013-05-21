@@ -3,7 +3,10 @@
 cd `dirname $0`
 git pull origin master
 
-rsync --exclude ".git" --exclude "configure" -av . ~
+rsync --exclude ".git" \
+      --exclude "configure" \
+      --exclude "README.md" \
+      -av . ~
 
 source ~/.zshrc
 cd
