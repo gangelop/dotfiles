@@ -24,7 +24,7 @@ SAVEHIST=1000
 #promptinit
 ##prompt elite2 cyan red
 #prompt fire blue blue cyan white black yellow
-source ~/.extra
+[ -r ~/.extra ] && source ~/.extra
 
 setopt histignorespace
 setopt histignorealldups
