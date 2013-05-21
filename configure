@@ -8,6 +8,7 @@ git pull origin master
 rsync --exclude ".git" \
       --exclude "configure" \
       --exclude "README.md" \
+      --exclude "LICENSE" \
       -av . ~
 
 source ~/.zshrc
