@@ -1,0 +1,9 @@
+[credential]
+	helper = cache
+[alias]
+    l = log --graph --oneline --decorate
+    st = status
+[push]
+	default = simple
+[color]
+	ui = true

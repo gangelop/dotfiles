@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+cd `dirname $0`
+
+rsync --exclude ".git" --exclude "configure" -av . ~
+
+source ~/.zshrc
+cd
