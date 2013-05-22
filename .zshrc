@@ -24,16 +24,14 @@ SAVEHIST=1000
 #promptinit
 ##prompt elite2 cyan red
 #prompt fire blue blue cyan white black yellow
-[ -r ~/.extra ] && source ~/.extra
+
+for file in ~/.{extra,aliases}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
 
 setopt histignorespace
 setopt histignorealldups
-
-alias xclip="xclip -selection c"
-alias rdesktop='rdesktop -g 1024x768'
-alias vboxmanage='VBoxManage'
-alias wolD='wol 00:1B:FC:32:BC:38'
-alias lt='ls -lth --color=auto'
 
 export EDITOR=vim
 setopt emacs
