@@ -1,14 +1,14 @@
 #!/bin/zsh
 
 cd `dirname $0`
+SCRIPTNAME=`basename $0`
 
-
-OLD_CONFIG="$(md5sum $0)"
+OLD_CONFIG="$(md5sum $SCRIPTNAME)"
 git pull origin master
-NEW_CONFIG="$(md5sum $0)"
+NEW_CONFIG="$(md5sum $SCRIPTNAME)"
 
 if [ ! $OLD_CONFIG = $NEW_CONFIG ]; then
-    echo "The $0 file has been updated. Please run the script again."
+    echo "The $SCRIPTNAME file has been updated. Please run the script again."
     cd $OLDPWD
     return 0
 fi
