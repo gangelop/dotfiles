@@ -8,8 +8,9 @@ git pull origin master
 NEW_CONFIG="$(md5sum $SCRIPTNAME)"
 
 if [ ! $OLD_CONFIG = $NEW_CONFIG ]; then
-    echo "The $SCRIPTNAME file has been updated. Please run the script again."
+    echo "The $SCRIPTNAME file has been updated. It will now run again."
     cd $OLDPWD
+    source $0
     return 0
 fi
 
