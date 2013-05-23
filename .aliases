@@ -1,5 +1,4 @@
 alias xclip="xclip -selection c"
 alias rdesktop='rdesktop -g 1024x768'
 alias vboxmanage='VBoxManage'
-alias wolD='wol 00:1B:FC:32:BC:38'
 alias lt='ls -lth --color=auto'
