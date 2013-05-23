@@ -18,7 +18,7 @@ rsync --exclude ".git" \
       --exclude "configure" \
       --exclude "README.md" \
       --exclude "LICENSE" \
-      -av . ~
+      -av --no-perms . ~
 
 source ~/.zshrc
 
