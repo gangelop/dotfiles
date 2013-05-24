@@ -42,4 +42,5 @@ endfunc
 "Skeleton/Templates for new files"
 :autocmd BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
 :autocmd BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
+:autocmd BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
 :autocmd BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
