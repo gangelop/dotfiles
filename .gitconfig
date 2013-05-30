@@ -1,11 +1,11 @@
 [core]
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [credential]
-	helper = cache
+    helper = cache
 [alias]
     l = log --graph --oneline --decorate
     st = status
 [push]
-	default = simple
+    default = simple
 [color]
-	ui = true
+    ui = true
