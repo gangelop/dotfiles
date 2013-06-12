@@ -162,3 +162,6 @@ bar {
 # general shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
 bindsym $mod+t exec "thunar"
+
+# background wallpaper
+exec --no-startup-id "bash ~/.fehbg"
