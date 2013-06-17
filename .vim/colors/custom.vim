@@ -22,6 +22,7 @@ let colors_name = "custom"
 
 highlight Comment   ctermfg=DarkGray
 highlight String    ctermfg=LightBlue
+highlight LineNr    ctermfg=darkgrey
 
 
 " vim: sw=2
