@@ -7,7 +7,9 @@ set shiftwidth=4
 set nomodeline
 set smarttab
 set expandtab
+
 syntax on
+set number
 
 colorscheme custom
 
