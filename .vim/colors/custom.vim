@@ -13,9 +13,10 @@ endif
 
 let colors_name = "custom"
 
-highlight Comment   ctermfg=DarkGray
-highlight String    ctermfg=LightBlue
-highlight LineNr    ctermfg=darkgrey
-
-
-" vim: sw=2
+highlight Comment       ctermfg=DarkGray
+highlight String        ctermfg=LightBlue
+highlight LineNr        ctermfg=darkgrey
+highlight VertSplit     ctermfg=grey
+highlight StatusLine    ctermfg=grey
+highlight StatusLineNC  ctermfg=darkgrey
+highlight WildMenu      ctermfg=white ctermbg=black
