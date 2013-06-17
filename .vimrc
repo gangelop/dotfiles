@@ -14,6 +14,9 @@ set wildmenu
 
 colorscheme custom
 
+" Toggles NERDTree with 'ctrl+t'
+map <C-t> : NERDTreeToggle<CR>
+
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 
 map <F4> : call CompileRunC()<CR>
