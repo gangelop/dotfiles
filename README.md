@@ -6,6 +6,17 @@ My various dotfiles
 These files are licensed under the open-source MIT license.
 tl;dr: do whatever you want but don't sue me. :)
 
+## Usage
+
+clone the repo:
+```bash
+git clone https://github.com/lathan/dotfiles.git
+```
+To install the dotfiles and **overwrite** those in your home directory run:
+```bash
+source dotfiles/configure
+```
+
 ## Extra stuff, not in the public repo.
 
 Extra stuff that can or should be out of the public repository, can be
