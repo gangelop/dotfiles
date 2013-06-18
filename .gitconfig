@@ -4,7 +4,7 @@
     helper = cache
 [alias]
     l = log --graph --oneline --decorate
-    st = status --short
+    st = status --short --branch
 [push]
     default = simple
 [color]
