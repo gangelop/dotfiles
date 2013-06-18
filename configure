@@ -16,7 +16,7 @@ if [ ! $OLD_CONFIG = $NEW_CONFIG ]; then
 fi
 
 rsync --exclude ".git" \
-      --exclude "configure" \
+      --exclude "$SCRIPTNAME" \
       --exclude "README.md" \
       --exclude "LICENSE" \
       -av --no-perms . ~
