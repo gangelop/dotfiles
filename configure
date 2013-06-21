@@ -19,6 +19,7 @@ rsync --exclude ".git" \
       --exclude "$SCRIPTNAME" \
       --exclude "README.md" \
       --exclude "LICENSE" \
+      --exclude "*.swp" \
       -av --no-perms . ~
 
 source ~/.zshrc
