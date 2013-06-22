@@ -157,6 +157,10 @@ bindsym $mod+r mode "resize"
 bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
+        colors {
+            background #000000
+            statusline #aaaaaa
+        }
 }
 
 # general shortcuts
