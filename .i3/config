@@ -117,7 +117,7 @@ assign [class="^Firefox$"] 3:firefox
 assign [class="^Clementine$"] 9:clementine
 
 # lock screen
-bindsym $mod+Delete exec "i3lock -i $(sh ~/.i3lock_background.sh)"
+bindsym $mod+Delete exec "i3lock -c 000000"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
