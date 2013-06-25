@@ -8,6 +8,8 @@ tl;dr: do whatever you want but don't sue me. :)
 
 ## Usage
 
+The `configure` script is meant to work with *zsh only*.
+
 clone the repo:
 ```bash
 git clone https://github.com/lathan/dotfiles.git
