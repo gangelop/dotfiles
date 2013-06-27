@@ -110,6 +110,10 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9:clementine
 bindsym $mod+Shift+0 move container to workspace 10
 
+# move workspace to the next output (right)
+# if there are only two outputs this just switches between them
+bindsym $mod+x move workspace to output right
+
 # Assign specific applications to workspaces
 assign [class="^Skype$"] 2:pidgin
 assign [class="^Pidgin$"] 2:pidgin
