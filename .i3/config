@@ -177,7 +177,6 @@ bar {
 bar {
         output HDMI-0
         position top
-        tray_output DVI-0
         colors {
             background #000000
             statusline #aaaaaa
