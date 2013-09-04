@@ -118,6 +118,7 @@ bindsym $mod+x move workspace to output right
 assign [class="^Skype$"] 2:pidgin
 assign [class="^Pidgin$"] 2:pidgin
 assign [class="^Firefox$"] 3:firefox
+assign [class="^Chromium$"] 3:firefox
 assign [class="^Clementine$"] 9:clementine
 
 # lock screen
