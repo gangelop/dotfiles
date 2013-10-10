@@ -198,7 +198,10 @@ bar {
 
 # general shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
-bindsym $mod+t exec "thunar"
+bindsym $mod+mod1+t exec "thunar"
+bindsym $mod+mod1+p exec "pidgin"
+bindsym $mod+mod1+f exec "firefox"
+bindsym $mod+mod1+c exec "chromium"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
