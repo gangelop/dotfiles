@@ -3,8 +3,7 @@ dotfiles
 
 My various dotfiles
 
-These files are licensed under the open-source MIT license.
-tl;dr: do whatever you want but don't sue me. :)
+This software is released to the public domain. See `UNLICENSE.md` for more info.
 
 ## Usage
 
