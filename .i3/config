@@ -120,6 +120,7 @@ assign [class="^Pidgin$"] 2:pidgin
 assign [class="^Firefox$"] 3:firefox
 assign [class="^Chromium$"] 3:firefox
 assign [class="^Clementine$"] 9:clementine
+assign [class="^Thunderbird$"] 4
 
 # lock screen
 bindsym $mod+Delete exec "i3lock -c 000000"
