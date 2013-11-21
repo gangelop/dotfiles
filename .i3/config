@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 # Desktop, primary monitor
 bar {
         tray_output none
-        output DVI-0
+        output DVI-I-0
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
         colors {
