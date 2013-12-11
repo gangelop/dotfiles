@@ -37,4 +37,6 @@ setopt histignorespace
 setopt histignorealldups
 
 export EDITOR=vim
+export PATH=$PATH:$HOME/scripts
+
 setopt emacs
