@@ -20,9 +20,9 @@ map <C-t> : NERDTreeToggle<CR>
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 
 map <F4> : call CompileRunC()<CR>
-map <F5> : call WriteRunPerl()<CR>
-map <F6> : call WriteRunPython2()<CR>
-map <F7> : call WriteRunPython3()<CR>
+map <F5> : call RunPerl()<CR>
+map <F6> : call RunPython2()<CR>
+map <F7> : call RunPython3()<CR>
 
 func! CompileRunC()
     exec "w"
@@ -34,19 +34,19 @@ func! CompileRunCPlusPlus()
     exec "!g++ -Wall -ansi % -o %<.out && ./%<.out"
 endfunc
 
-func! WriteRunPython2()
+func! RunPython2()
     exec "w"
     exec "!python2 %" 
 endfunc
 
-func! WriteRunPython3()
+func! RunPython3()
     exec "w"
     exec "!python %" 
 endfunc
 
-func! WriteRunPerl()
+func! RunPerl()
     exec "w"
-    exec "!perl %"
+    exec "!perl %" 
 endfunc
 
 "Skeleton/Templates for new files"
