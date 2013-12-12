@@ -54,3 +54,4 @@ endfunc
 :autocmd BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
 :autocmd BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
 :autocmd BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
+:autocmd BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
