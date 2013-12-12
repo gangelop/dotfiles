@@ -20,7 +20,7 @@ map <C-t> : NERDTreeToggle<CR>
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 
 map <F4> : call CompileRunC()<CR>
-map <F5> : call CompileRunCPlusPlus()<CR>
+map <F5> : call WriteRunPerl()<CR>
 map <F6> : call WriteRunPython2()<CR>
 map <F7> : call WriteRunPython3()<CR>
 
@@ -44,6 +44,10 @@ func! WriteRunPython3()
     exec "!python %" 
 endfunc
 
+func! WriteRunPerl()
+    exec "w"
+    exec "!perl %"
+endfunc
 
 "Skeleton/Templates for new files"
 :autocmd BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
