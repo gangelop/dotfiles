@@ -179,6 +179,7 @@ bar {
 # Desktop, secondary monitor
 bar {
         output HDMI-0
+        status_command py3status -c ~/.i3status_2ndmonitor.conf
         position top
         colors {
             background #000000
