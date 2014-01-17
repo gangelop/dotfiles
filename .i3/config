@@ -88,7 +88,7 @@ bindsym $mod+a focus parent
 
 # switch to workspace
 bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2:pidgin
+bindsym $mod+2 workspace 2:im
 bindsym $mod+3 workspace 3:firefox
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
@@ -100,7 +100,7 @@ bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2:pidgin
+bindsym $mod+Shift+2 move container to workspace 2:im
 bindsym $mod+Shift+3 move container to workspace 3:firefox
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
@@ -115,8 +115,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+x move workspace to output right
 
 # Assign specific applications to workspaces
-assign [class="^Skype$"] 2:pidgin
-assign [class="^Pidgin$"] 2:pidgin
+assign [class="^Skype$"] 2:im
+assign [class="^Pidgin$"] 2:im
 assign [class="^Firefox$"] 3:firefox
 assign [class="^Chromium$"] 3:firefox
 assign [class="^Clementine$"] 9:clementine
