@@ -14,6 +14,10 @@ set wildmenu
 
 colorscheme custom
 
+" Only works on version >= 7.3
+" see http://vim.wikia.com/wiki/Encryption for details
+set cryptmethod=blowfish
+
 " Toggles NERDTree with 'ctrl+t'
 map <C-t> : NERDTreeToggle<CR>
 
