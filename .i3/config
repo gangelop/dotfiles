@@ -120,7 +120,7 @@ assign [class="^Pidgin$"] 2:im
 assign [class="^Firefox$"] 3:web
 assign [class="^Chromium$"] 3:web
 assign [class="^Clementine$"] 9:music
-assign [class="^Thunderbird$"] 5
+assign [class="^Thunderbird$"] 4
 
 # lock screen
 bindsym $mod+Delete exec "i3lock -c 000000"
