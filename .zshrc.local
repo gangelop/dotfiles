@@ -40,3 +40,10 @@ export EDITOR=vim
 export PATH=$PATH:$HOME/scripts
 
 setopt emacs
+
+# zsh-syntax-highlighting
+# requires zsh-syntax-highlighting package
+# from community
+zsh_syntax_hi=/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -r $zsh_syntax_hi ] && source $zsh_syntax_hi
+unset zsh_syntax_hi
