@@ -178,7 +178,7 @@ bar {
 
 # Desktop, secondary monitor
 bar {
-        output HDMI-0
+        output VGA-0
         status_command py3status -c ~/.i3status_2ndmonitor.conf
         position top
         colors {
