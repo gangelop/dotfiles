@@ -3,7 +3,7 @@
 [credential]
     helper = cache
 [alias]
-    l = log --graph --oneline --decorate
+    l = log --graph --decorate --oneline
     ll = log --graph --decorate --stat
     st = status --short --branch
 [push]
