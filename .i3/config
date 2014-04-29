@@ -208,3 +208,6 @@ bindsym $mod+mod1+c exec "chromium"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
+
+# start compton compositor
+exec --no-startup-id "compton --config ~/.config/compton.conf -b"
