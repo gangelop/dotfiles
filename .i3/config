@@ -208,6 +208,7 @@ bindsym $mod+mod1+t exec "thunar"
 bindsym $mod+mod1+p exec "pidgin"
 bindsym $mod+mod1+f exec "firefox"
 bindsym $mod+mod1+c exec "chromium"
+bindsym $mod+m      exec "clementine -o"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
