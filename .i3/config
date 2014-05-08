@@ -125,7 +125,9 @@ assign [class="^Clementine$"] 9:music
 assign [class="^Thunderbird$"] 4
 
 # lock screen
-bindsym $mod+Delete exec "i3lock -c 000000"
+# We're using dunst for notifications so we pause it before i3lock
+# to prevent screen flickering. Then, unpause it when i3lcok exits.
+bindsym $mod+Delete exec "killall -SIGUSR1 dunst && i3lock -c 000000 --nofork && killall -SIGUSR2 dunst"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
