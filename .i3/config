@@ -202,6 +202,17 @@ bar {
         }
 }
 
+# macbook
+bar {
+        output eDP1
+        status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
+        position top
+        colors {
+            background #000000
+            statusline #aaaaaa
+        }
+}
+
 # general shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
 bindsym $mod+mod1+t exec "thunar"
