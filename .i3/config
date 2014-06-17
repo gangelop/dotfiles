@@ -124,6 +124,9 @@ assign [class="^Chromium$"] 3:web
 assign [class="^Clementine$"] 9:music
 assign [class="^Thunderbird$"] 4
 
+# always float the 'display' windows
+for_window [class="Display"] floating enable
+
 # lock screen
 # We're using dunst for notifications so we pause it before i3lock
 # to prevent screen flickering. Then, unpause it when i3lock exits.
