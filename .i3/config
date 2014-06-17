@@ -126,6 +126,7 @@ assign [class="^Thunderbird$"] 4
 
 # always float the 'display' windows
 for_window [class="Display"] floating enable
+for_window [class="Display"] border none
 
 # lock screen
 # We're using dunst for notifications so we pause it before i3lock
