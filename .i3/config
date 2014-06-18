@@ -225,6 +225,7 @@ bindsym $mod+mod1+f exec "firefox"
 bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
+bindsym $mod+z      exec "pavucontrol"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
