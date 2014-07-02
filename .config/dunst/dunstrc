@@ -1,3 +1,4 @@
+# <- this tricks vim into using syntax highlighting
 [global]
     font = Liberation Monospace 8
 
