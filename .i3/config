@@ -172,6 +172,10 @@ mode "brightness" {
     bindsym h exec "kbdlight down"
     bindsym l exec "kbdlight up"
 
+    bindsym Up exec "xbacklight -inc 5"
+    bindsym Down exec "xbacklight -dec 5"
+    bindsym Left exec "kbdlight down"
+    bindsym Right exec "kbdlight up"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
