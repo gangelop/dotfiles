@@ -125,7 +125,7 @@
     browser = /usr/bin/firefox -new-tab
 
 [frame]
-    width = 3
+    width = 0
     color = "#222222"
 
 [shortcuts]
