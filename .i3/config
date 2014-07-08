@@ -164,8 +164,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
-
 mode "brightness" {
     bindsym k exec "xbacklight -inc 5"
     bindsym j exec "xbacklight -dec 5"
@@ -181,6 +179,7 @@ mode "brightness" {
     bindsym Escape mode "default"
 }
 
+bindsym $mod+r mode "resize"
 bindsym $mod+b mode "brightness"
 
 # Start i3bar to display a workspace bar (plus the system information py3status
