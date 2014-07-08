@@ -198,6 +198,7 @@ bar {
         colors {
             background #000000
             statusline #aaaaaa
+            urgent_workspace #2f343a #ffff00 #000000
         }
 }
 
@@ -209,6 +210,7 @@ bar {
         colors {
             background #000000
             statusline #aaaaaa
+            urgent_workspace #2f343a #ffff00 #000000
         }
 }
 
@@ -220,6 +222,7 @@ bar {
         colors {
             background #000000
             statusline #aaaaaa
+            urgent_workspace #2f343a #ffff00 #000000
         }
 }
 
@@ -231,8 +234,12 @@ bar {
         colors {
             background #000000
             statusline #aaaaaa
+            urgent_workspace #2f343a #ffff00 #000000
         }
 }
+
+# window (client) colors
+client.urgent   #2f343a #ffff00 #000000 #ffff00
 
 # general shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
