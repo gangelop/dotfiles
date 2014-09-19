@@ -53,7 +53,13 @@ func! RunPerl()
     exec "!perl %" 
 endfunc
 
-"Skeleton/Templates for new files"
+" SKELETONS
+" When I open a new file, vim detects the file extention and
+" automatically fills in a basic structure for that particular file type.
+" For example, if I do `vim /tmp/foobar.sh`, vim will automatically include
+" something like:
+" #!/bin/sh
+
 :autocmd BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
 :autocmd BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
 :autocmd BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
