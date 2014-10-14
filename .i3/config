@@ -119,6 +119,7 @@ bindsym $mod+x move workspace to output right
 # Assign specific applications to workspaces
 assign [class="^Skype$"] 2:im
 assign [class="^Pidgin$"] 2:im
+assign [class="^HipChat$"] 2:im
 assign [class="^Firefox$"] 3:web
 assign [class="^Chromium$"] 3:web
 assign [class="^Clementine$"] 9:music
