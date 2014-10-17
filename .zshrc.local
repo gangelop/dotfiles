@@ -28,7 +28,7 @@ SAVEHIST=1000
 #prompt fire blue blue cyan white black yellow
 # end of old config before I was using grml-zsh-config
 
-for file in ~/.{extra,aliases}; do
+for file in ~/.{extra,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
