@@ -1,10 +1,7 @@
 # change the password store directory
 function passdir {
     if [[ -n "$1" ]]; then
-        wdsave=$(pwd)
-        cd "$(dirname "$0")"
-        export PASSWORD_STORE_DIR="$(pwd)/$1"
-        cd "$wdsave"
+        export PASSWORD_STORE_DIR="$(readlink -nf "$1")"
     else
         unset PASSWORD_STORE_DIR
     fi
