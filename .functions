@@ -1,7 +1,7 @@
 # change the password store directory
 function passdir {
     if [[ -n "$1" ]]; then
-        export PASSWORD_STORE_DIR="$(cd "$1"; pwd)"
+        export PASSWORD_STORE_DIR="$(cd "$1"; pwd -P)"
     else
         unset PASSWORD_STORE_DIR
     fi
