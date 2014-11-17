@@ -9,6 +9,7 @@ set smarttab
 set expandtab
 
 syntax on
+set hlsearch
 set number
 set wildmenu
 
@@ -21,8 +22,10 @@ set cryptmethod=blowfish
 " Toggles NERDTree with 'ctrl+t'
 map <C-t> : NERDTreeToggle<CR>
 
-"http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
+" Press Ctrl+H to toggle search highlighting
+map <C-h> : set hlsearch!<CR>
 
+"http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 map <F4> : call CompileRunC()<CR>
 map <F5> : call RunPerl()<CR>
 map <F6> : call RunPython2()<CR>
