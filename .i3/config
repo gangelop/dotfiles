@@ -216,6 +216,7 @@ bar {
         colors {
             background          #000000
             statusline          #aaaaaa
+            focused_workspace   #334A5D     #334A5D     #ffffff
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -229,6 +230,7 @@ bar {
         colors {
             background          #000000
             statusline          #aaaaaa
+            focused_workspace   #334A5D     #334A5D     #ffffff
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -242,6 +244,7 @@ bar {
         colors {
             background          #000000
             statusline          #aaaaaa
+            focused_workspace   #334A5D     #334A5D     #ffffff
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -255,6 +258,7 @@ bar {
         colors {
             background          #000000
             statusline          #aaaaaa
+            focused_workspace   #334A5D     #334A5D     #ffffff
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
