@@ -214,9 +214,10 @@ bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
         colors {
-            background #000000
-            statusline #aaaaaa
-            urgent_workspace #2f343a #ffff00 #000000
+            background          #000000
+            statusline          #aaaaaa
+            urgent_workspace    #2f343a     #ffff00     #000000
+            #colorclass         <border>    <background> <text>
         }
 }
 
@@ -226,9 +227,10 @@ bar {
         status_command py3status -c ~/.i3status_2ndmonitor.conf
         position top
         colors {
-            background #000000
-            statusline #aaaaaa
-            urgent_workspace #2f343a #ffff00 #000000
+            background          #000000
+            statusline          #aaaaaa
+            urgent_workspace    #2f343a     #ffff00     #000000
+            #colorclass         <border>    <background> <text>
         }
 }
 
@@ -238,9 +240,10 @@ bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
         colors {
-            background #000000
-            statusline #aaaaaa
-            urgent_workspace #2f343a #ffff00 #000000
+            background          #000000
+            statusline          #aaaaaa
+            urgent_workspace    #2f343a     #ffff00     #000000
+            #colorclass         <border>    <background> <text>
         }
 }
 
@@ -250,9 +253,10 @@ bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
         colors {
-            background #000000
-            statusline #aaaaaa
-            urgent_workspace #2f343a #ffff00 #000000
+            background          #000000
+            statusline          #aaaaaa
+            urgent_workspace    #2f343a     #ffff00     #000000
+            #colorclass         <border>    <background> <text>
         }
 }
 
