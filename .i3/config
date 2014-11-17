@@ -129,6 +129,11 @@ assign [class="^Chromium$"] 3:web
 assign [class="^Clementine$"] 9:music
 assign [class="^Thunderbird$"] 4
 
+
+# Hides vertical and horizontal borders when there's only one window.
+# Looks neat :)
+hide_edge_borders both
+
 # always float the 'display' windows
 for_window [class="Display"] floating enable
 for_window [class="Display"] border none
