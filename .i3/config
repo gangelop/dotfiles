@@ -217,6 +217,7 @@ bar {
             background          #1F2326
             statusline          #aaaaaa
             focused_workspace   #334A5D     #334A5D     #ffffff
+            inactive_workspace  #222222     #222222     #888888
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -231,6 +232,7 @@ bar {
             background          #1F2326
             statusline          #aaaaaa
             focused_workspace   #334A5D     #334A5D     #ffffff
+            inactive_workspace  #222222     #222222     #888888
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -245,6 +247,7 @@ bar {
             background          #1F2326
             statusline          #aaaaaa
             focused_workspace   #334A5D     #334A5D     #ffffff
+            inactive_workspace  #222222     #222222     #888888
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
@@ -259,6 +262,7 @@ bar {
             background          #1F2326
             statusline          #aaaaaa
             focused_workspace   #334A5D     #334A5D     #ffffff
+            inactive_workspace  #222222     #222222     #888888
             urgent_workspace    #2f343a     #ffff00     #000000
             #colorclass         <border>    <background> <text>
         }
