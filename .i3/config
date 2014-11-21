@@ -270,9 +270,10 @@ bar {
 
 # window (client) colors
 # class                 border  backgr. text    indicator
-client.urgent           #2f343a #ffff00 #000000 #ffff00
+client.urgent           #ffff00 #ffff00 #000000 #ffff00
 client.focused          #334A5D #334A5D #ffffff #2e9ef4
 client.unfocused        #222222 #222222 #888888 #292d2e
+client.focused_inactive #333333 #5f676a #ffffff #484e50
 
 # general shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
