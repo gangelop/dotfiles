@@ -1,6 +1,6 @@
 # <- this tricks vim into using syntax highlighting
 [global]
-    font = Liberation Monospace 8
+    font = Ubuntu 8
 
     # allow a small subset of html markup:
     # <b>bold</b>
