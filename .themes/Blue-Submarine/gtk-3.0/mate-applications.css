@@ -206,7 +206,11 @@ CajaTrashBar .button:hover {
 .question .button:active,
 .question .button:hover:active,
 CajaTrashBar .button:active,
-CajaTrashBar .button:hover:active {
+CajaTrashBar .button:hover:active,
+.question .button:checked,
+.question .button:hover:checked,
+CajaTrashBar .button:checked,
+CajaTrashBar .button:hover:checked {
 /* .button:hover:active */
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -233,7 +237,11 @@ CajaTrashBar .button:hover:active {
 .question .button *:active,
 .question .button *:hover:active,
 CajaTrashBar .button *:active,
-CajaTrashBar .button *:hover:active {
+CajaTrashBar .button *:hover:active,
+.question .button *:checked,
+.question .button *:hover:checked,
+CajaTrashBar .button *:checked,
+CajaTrashBar .button *:hover:checked {
 	color: shade(@theme_text_color, 1.00);
 	text-shadow: 0px 1px @theme_shadow_color;
 }
@@ -285,8 +293,10 @@ CajaWindow .primary-toolbar.toolbar .entry {
 
 CajaWindow .primary-toolbar.toolbar .button,
 CajaWindow .primary-toolbar.toolbar .button:active,
+CajaWindow .primary-toolbar.toolbar .button:checked,
 CajaWindow .primary-toolbar.toolbar .button:hover,
-CajaWindow .primary-toolbar.toolbar .button:hover:active {       
+CajaWindow .primary-toolbar.toolbar .button:hover:active,
+CajaWindow .primary-toolbar.toolbar .button:hover:checked {
 	padding: 0px 4px;
     border-image: none;
     border-width: 1px;
@@ -332,7 +342,8 @@ CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:hover {
 	color: shade(@theme_text_dark_color, 1.00);
 }
 
-CajaWindow .primary-toolbar.toolbar CajaPathbarButton:active {
+CajaWindow .primary-toolbar.toolbar CajaPathbarButton:active,
+CajaWindow .primary-toolbar.toolbar CajaPathbarButton:checked {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -353,7 +364,9 @@ CajaWindow .primary-toolbar.toolbar CajaPathbarButton:active {
 }
 
 CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:active,
-CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:hover:active {
+CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:hover:active,
+CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:checked,
+CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:hover:checked {
     font: bold;
 	color: shade(@theme_text_dark_color, 1.00);
 	text-shadow: 1px 1px @theme_shadow_dark_color;
@@ -363,7 +376,11 @@ CajaWindow .primary-toolbar.toolbar CajaPathbarButton *:hover:active {
 CajaWindow .primary-toolbar .toolbar .button:active,
 CajaWindow .primary-toolbar.toolbar .button:active,
 CajaWindow .primary-toolbar .toolbar .button:active:hover,
-CajaWindow .primary-toolbar.toolbar .button:active:hover {
+CajaWindow .primary-toolbar.toolbar .button:active:hover,
+CajaWindow .primary-toolbar .toolbar .button:checked,
+CajaWindow .primary-toolbar.toolbar .button:checked,
+CajaWindow .primary-toolbar .toolbar .button:checked:hover,
+CajaWindow .primary-toolbar.toolbar .button:checked:hover {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -407,6 +424,8 @@ CajaWindow .primary-toolbar.toolbar .button:hover {
 /* buttons toolbar caja */
 CajaWindow .toolbar .button GtkImage:active,
 CajaWindow .toolbar .button GtkImage:active:hover,
+CajaWindow .toolbar .button GtkImage:checked,
+CajaWindow .toolbar .button GtkImage:checked:hover,
 CajaWindow .toolbar .button GtkImage:hover,
 CajaWindow .toolbar .button GtkImage {
     color: @theme_fg_color;
@@ -427,7 +446,8 @@ CajaWindow .primary-toolbar.toolbar .button GtkImage {
     text-shadow: 1px 1px black;
 }
 
-.caja-desktop.caja-canvas-item:active {
+.caja-desktop.caja-canvas-item:active,
+.caja-desktop.caja-canvas-item:checked {
     background-image: none;
     color: @theme_text_color;
 }
@@ -437,6 +457,7 @@ CajaWindow .primary-toolbar.toolbar .button GtkImage {
 }
 
 .caja-desktop.caja-canvas-item:active,
+.caja-desktop.caja-canvas-item:checked,
 .caja-desktop.caja-canvas-item:prelight,
 .caja-desktop.caja-canvas-item:selected {
     text-shadow: none;
@@ -505,7 +526,9 @@ MatePanelApplet .button {
 }
 
 MatePanelApplet .button:active:hover,
-MatePanelApplet .button:active {
+MatePanelApplet .button:active,
+MatePanelApplet .button:checked:hover,
+MatePanelApplet .button:checked {
 	background-image: none;
 	border-color: @selected_bg_color;
 	background-color: shade (@selected_bg_color, 0.90);
@@ -568,7 +591,9 @@ WnckTasklist .button {
 }
 
 WnckTasklist .button:active:hover,
-WnckTasklist .button:active {
+WnckTasklist .button:active,
+WnckTasklist .button:checked:hover,
+WnckTasklist .button:checked {
 	background-image: none;
 	border-color: @selected_bg_color;
 	background-color: shade (@selected_bg_color, 0.90);

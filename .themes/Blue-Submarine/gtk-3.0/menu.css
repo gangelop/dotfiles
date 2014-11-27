@@ -236,6 +236,8 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.radio:insensitive,
 .menuitem.check:active:insensitive,
 .menuitem.radio:active:insensitive,
+.menuitem.check:checked:insensitive,
+.menuitem.radio:checked:insensitive,
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     border-width: 0px;
@@ -251,7 +253,11 @@ GtkTreeMenu .menuitem *:prelight,
 .toolbar .raised .button .menuitem.check:active,
 .toolbar .raised .button .menuitem.radio:active,
 .menuitem.check:active,
-.menuitem.radio:active {
+.menuitem.radio:active,
+.toolbar .raised .button .menuitem.check:checked,
+.toolbar .raised .button .menuitem.radio:checked,
+.menuitem.check:checked,
+.menuitem.radio:checked {
     border-width: 0px;
 	border-style: none;
     background-image: none;
@@ -269,6 +275,10 @@ GtkTreeMenu .menuitem *:prelight,
 .toolbar .raised .button .menuitem.radio:active:hover,
 .menuitem.check:active:hover,
 .menuitem.radio:active:hover,
+.toolbar .raised .button .menuitem.check:checked:hover,
+.toolbar .raised .button .menuitem.radio:checked:hover,
+.menuitem.check:checked:hover,
+.menuitem.radio:checked:hover,
 .menuitem.arrow:hover {
     border-color: @theme_selected_fg_color;
     color: @theme_selected_fg_color;
@@ -278,6 +288,8 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.radio:insensitive,
 .menuitem.check:active:insensitive,
 .menuitem.radio:active:insensitive,
+.menuitem.check:checked:insensitive,
+.menuitem.radio:checked:insensitive,
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.6);

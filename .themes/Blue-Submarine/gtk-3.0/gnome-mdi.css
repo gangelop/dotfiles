@@ -63,7 +63,11 @@ EphyToolbar.toolbar .raised.button *:hover,
 EphyToolbar.toolbar .raised .button *:active,
 EphyToolbar.toolbar .raised.button *:active,
 EphyToolbar.toolbar .raised .button *:active:hover,
-EphyToolbar.toolbar .raised.button *:active:hover {
+EphyToolbar.toolbar .raised.button *:active:hover,
+EphyToolbar.toolbar .raised .button *:checked,
+EphyToolbar.toolbar .raised.button *:checked,
+EphyToolbar.toolbar .raised .button *:checked:hover,
+EphyToolbar.toolbar .raised.button *:checked:hover {
 	color: @theme_text_dark_color;
     text-shadow: 0px 1px @theme_shadow_dark_color;
 }
@@ -353,7 +357,9 @@ MathWindow .button {
 }
 
 MathWindow .button:active,
-MathWindow .button:hover:active {
+MathWindow .button:hover:active,
+MathWindow .button:checked,
+MathWindow .button:hover:checked {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -431,7 +437,9 @@ RBSource .toolbar .button *:hover {
 }
 
 RBSource .toolbar .button *:active,
-RBSource .toolbar .button *:active:hover {
+RBSource .toolbar .button *:active:hover,
+RBSource .toolbar .button *:checked,
+RBSource .toolbar .button *:checked:hover {
     color:  shade(@theme_text_color, 0.95);
 	text-shadow: 0 1px @theme_shadow_color;
 }
@@ -559,7 +567,13 @@ NautilusTrashBar .button:hover {
 NemoTrashBar .button:active,
 NemoTrashBar .button:hover:active,
 NautilusTrashBar .button:active,
-NautilusTrashBar .button:hover:active {
+NautilusTrashBar .button:hover:active,
+.question .button:checked,
+.question .button:hover:checked,
+NemoTrashBar .button:checked,
+NemoTrashBar .button:hover:checked,
+NautilusTrashBar .button:checked,
+NautilusTrashBar .button:hover:checked {
 /* .button:hover:active */
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -588,7 +602,13 @@ NautilusTrashBar .button:hover:active {
 NemoTrashBar .button *:active,
 NemoTrashBar .button *:hover:active,
 NautilusTrashBar .button *:active,
-NautilusTrashBar .button *:hover:active {
+NautilusTrashBar .button *:hover:active,
+.question .button *:checked,
+.question .button *:hover:checked,
+NemoTrashBar .button *:checked,
+NemoTrashBar .button *:hover:checked,
+NautilusTrashBar .button *:checked,
+NautilusTrashBar .button *:hover:checked {
 	color: shade(@theme_text_color, 1.00);
 	text-shadow: 0px 1px @theme_shadow_color;
 }
@@ -708,8 +728,10 @@ NemoWindow .primary-toolbar.toolbar .entry {
 
 NemoWindow .primary-toolbar.toolbar .button,
 NemoWindow .primary-toolbar.toolbar .button:active,
+NemoWindow .primary-toolbar.toolbar .button:checked,
 NemoWindow .primary-toolbar.toolbar .button:hover,
-NemoWindow .primary-toolbar.toolbar .button:hover:active {       
+NemoWindow .primary-toolbar.toolbar .button:hover:active,
+NemoWindow .primary-toolbar.toolbar .button:hover:checked {
 	padding: 0px 4px;
     border-image: none;
     border-width: 1px;
@@ -755,7 +777,8 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover {
 	color: shade(@theme_text_dark_color, 1.00);
 }
 
-NemoWindow .primary-toolbar.toolbar NemoPathbarButton:active {
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton:active,
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton:checked {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -776,7 +799,9 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton:active {
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:active,
-NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:active {
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:active,
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:checked,
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:checked {
     font: bold;
 	color: shade(@theme_text_dark_color, 1.00);
 	text-shadow: 1px 1px @theme_shadow_dark_color;
@@ -784,7 +809,9 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:active {
 }
 
 NemoWindow .primary-toolbar.toolbar .button:active,
-NemoWindow .primary-toolbar.toolbar .button:hover:active {
+NemoWindow .primary-toolbar.toolbar .button:hover:active,
+NemoWindow .primary-toolbar.toolbar .button:checked,
+NemoWindow .primary-toolbar.toolbar .button:hover:checked {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -843,6 +870,8 @@ NemoWindow .toolbar {
 /* small buttons statusbar nemo */
 NemoWindow .toolbar .button GtkImage:active,
 NemoWindow .toolbar .button GtkImage:active:hover,
+NemoWindow .toolbar .button GtkImage:checked,
+NemoWindow .toolbar .button GtkImage:checked:hover,
 NemoWindow .toolbar .button GtkImage:hover,
 NemoWindow .toolbar .button GtkImage {
     color: @theme_fg_color;
@@ -851,7 +880,9 @@ NemoWindow .toolbar .button GtkImage {
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:active,
-NemoWindow .toolbar .button:hover:active {
+NemoWindow .toolbar .button:hover:active,
+NemoWindow .toolbar .button:checked,
+NemoWindow .toolbar .button:hover:checked {
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_gradient1, 1.03)),
@@ -1126,7 +1157,9 @@ CheeseThumbView /* Cheese */
 }
 
 .nemo-desktop.nautilus-canvas-item:active,
-.nautilus-desktop.nautilus-canvas-item:active {
+.nautilus-desktop.nautilus-canvas-item:active,
+.nemo-desktop.nautilus-canvas-item:checked,
+.nautilus-desktop.nautilus-canvas-item:checked {
     background-image: none;
     color: @theme_text_color;
 }
@@ -1137,9 +1170,11 @@ CheeseThumbView /* Cheese */
 }
 
 .nemo-desktop.nautilus-canvas-item:active,
+.nemo-desktop.nautilus-canvas-item:checked,
 .nemo-desktop.nautilus-canvas-item:prelight,
 .nemo-desktop.nautilus-canvas-item:selected,
 .nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:checked,
 .nautilus-desktop.nautilus-canvas-item:prelight,
 .nautilus-desktop.nautilus-canvas-item:selected {
     text-shadow: none;
