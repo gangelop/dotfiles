@@ -13,7 +13,7 @@ clone the repo:
 ```bash
 git clone https://github.com/lathan/dotfiles.git
 ```
-To install the dotfiles and **overwrite** those in your home directory run:
+To install the dotfiles and **OVERWRITE** those in your home directory run:
 ```bash
 source dotfiles/configure
 ```
