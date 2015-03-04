@@ -209,7 +209,6 @@ bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot"
 
 # Desktop, primary monitor
 bar {
-        tray_output none
         output DVI-I-0
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
@@ -225,6 +224,7 @@ bar {
 
 # Desktop, secondary monitor
 bar {
+        tray_output none
         output HDMI-0
         status_command py3status -c ~/.i3status_2ndmonitor.conf
         position top
