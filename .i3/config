@@ -290,3 +290,6 @@ exec --no-startup-id "bash ~/.fehbg"
 
 # start compton compositor
 exec --no-startup-id "compton --config ~/.config/compton.conf -b"
+
+# start network manager applet
+exec --no-startup-id "nm-applet"
