@@ -9,6 +9,7 @@ set smarttab
 set expandtab
 
 syntax on
+filetype on
 set hlsearch
 set number
 set wildmenu
