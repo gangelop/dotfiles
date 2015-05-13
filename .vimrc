@@ -13,6 +13,7 @@ filetype on
 set hlsearch
 set number
 set wildmenu
+set modeline
 
 colorscheme custom
 
