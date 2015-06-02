@@ -12,6 +12,7 @@ filetype on
 set hlsearch
 set number
 set wildmenu
+set laststatus=2
 set modeline
 
 colorscheme custom
