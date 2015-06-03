@@ -28,28 +28,28 @@ map <F6> : call RunPython2()<CR>
 map <F7> : call RunPython3()<CR>
 
 func! CompileRunC()
-    exec "w"
-    exec "!gcc -Wall -ansi % -o %<.out && ./%<.out" 
+	exec "w"
+	exec "!gcc -Wall -ansi % -o %<.out && ./%<.out"
 endfunc
 
 func! CompileRunCPlusPlus()
-    exec "w"
-    exec "!g++ -Wall -ansi % -o %<.out && ./%<.out"
+	exec "w"
+	exec "!g++ -Wall -ansi % -o %<.out && ./%<.out"
 endfunc
 
 func! RunPython2()
-    exec "w"
-    exec "!python2 %" 
+	exec "w"
+	exec "!python2 %"
 endfunc
 
 func! RunPython3()
-    exec "w"
-    exec "!python %" 
+	exec "w"
+	exec "!python %"
 endfunc
 
 func! RunPerl()
-    exec "w"
-    exec "!perl %" 
+	exec "w"
+	exec "!perl %"
 endfunc
 
 " SKELETONS
