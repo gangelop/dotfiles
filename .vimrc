@@ -53,7 +53,7 @@ endfunc
 
 func! RunPython3()
     exec "w"
-    exec "!python %" 
+    exec "!python3 %"
 endfunc
 
 func! RunPerl()
