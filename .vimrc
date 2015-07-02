@@ -1,6 +1,15 @@
 filetype plugin on
 filetype indent on
 
+"python PEP-8 friendly indentation: http://henry.precheur.org/vim/python"
+set autoindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+
 syntax on
 filetype on
 set hlsearch
