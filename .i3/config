@@ -209,7 +209,6 @@ bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot"
 
 # Desktop, primary monitor
 bar {
-        output DVI-I-0
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
         colors {
@@ -222,36 +221,6 @@ bar {
         }
 }
 
-# Desktop, secondary monitor
-bar {
-        tray_output none
-        output HDMI-0
-        status_command py3status -c ~/.i3status_2ndmonitor.conf
-        position top
-        colors {
-            background          #1F2326
-            statusline          #aaaaaa
-            focused_workspace   #334A5D     #334A5D     #ffffff
-            inactive_workspace  #222222     #222222     #888888
-            urgent_workspace    #2f343a     #ffff00     #000000
-            #colorclass         <border>    <background> <text>
-        }
-}
-
-# macbook
-bar {
-        output eDP1
-        status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
-        position top
-        colors {
-            background          #1F2326
-            statusline          #aaaaaa
-            focused_workspace   #334A5D     #334A5D     #ffffff
-            inactive_workspace  #222222     #222222     #888888
-            urgent_workspace    #2f343a     #ffff00     #000000
-            #colorclass         <border>    <background> <text>
-        }
-}
 
 # window (client) colors
 # class                 border  backgr. text    indicator
