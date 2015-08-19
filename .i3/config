@@ -153,7 +153,7 @@ for_window [window_role="Organizer"] floating enable
 # lock screen
 # We're using dunst for notifications so we pause it before i3lock
 # to prevent screen flickering. Then, unpause it when i3lock exits.
-bindsym $mod+BackSpace exec "killall -SIGUSR1 dunst; i3lock -c 000000 --nofork && killall -SIGUSR2 dunst"
+bindsym $mod+BackSpace exec "/home/george/scripts/lock.sh"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
