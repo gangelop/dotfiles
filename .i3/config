@@ -32,15 +32,6 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec j4-dmenu-desktop
-bindsym $mod+p exec "passmenu"
-# code 34 = "["
-# code 35 = "]"
-bindcode $mod+34 exec "PASSWORD_STORE_DIR=~/.pass1 passmenu"
-bindcode $mod+35 exec "PASSWORD_STORE_DIR=~/.pass2 passmenu"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -151,8 +142,6 @@ for_window [window_role="Organizer"] floating enable
 #for_window [window_role="pop-up"] floating enable
 
 # lock screen
-# We're using dunst for notifications so we pause it before i3lock
-# to prevent screen flickering. Then, unpause it when i3lock exits.
 bindsym $mod+BackSpace exec "/home/george/scripts/lock.sh"
 
 # reload the configuration file
@@ -166,10 +155,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing h will shrink the window’s width.
+        # Pressing l will grow the window’s width.
+        # Pressing k will shrink the window’s height.
+        # Pressing j will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
@@ -213,13 +202,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+b mode "brightness"
 bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot"
 
-# Start i3bar to display a workspace bar (plus the system information py3status
-# finds out, if available)
 
-# We have a separate bar configuration for each monitor.
-# Configuration for disabled monitors is ignored.
-
-# Desktop, primary monitor
+# i3 bar, yay!
 bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
@@ -241,7 +225,7 @@ client.focused_inactive #5f676a #5f676a #ffffff #484e50
 client.unfocused        #222222 #222222 #888888 #292d2e
 client.urgent           #ffff00 #ffff00 #000000 #ffff00
 
-# general shortcuts
+# general keyboard shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/images/scrot/'"
 bindsym $mod+mod1+t exec "thunar"
 bindsym $mod+mod1+p exec "pidgin"
@@ -250,6 +234,7 @@ bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
+bindsym $mod+p      exec "passmenu"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
