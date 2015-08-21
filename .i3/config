@@ -190,9 +190,10 @@ mode "brightness" {
     bindsym Escape mode "default"
 }
 
-mode "system: [p]oweroff [r]eboot" {
+mode "system: [p]oweroff [r]eboot [l]ogout" {
     bindsym p exec "poweroff"
     bindsym r exec "reboot"
+    bindsym l exec "i3-msg exit"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -200,7 +201,7 @@ mode "system: [p]oweroff [r]eboot" {
 
 bindsym $mod+r mode "resize"
 bindsym $mod+b mode "brightness"
-bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot"
+bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot [l]ogout"
 
 
 # i3 bar, yay!
