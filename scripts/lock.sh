@@ -13,5 +13,14 @@ scrot $tmpbg
 convert $tmpbg -scale 5% -scale 2005% -fill black -colorize 25% $tmpbg
 #[[ -f $icon ]] && convert $tmpbg $icon -gravity center -composite -matte $tmpbg
 #dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
-killall -SIGUSR1 dunst; i3lock -u --nofork -i $tmpbg && killall -SIGUSR2 dunst
+
+# Pause and unpause dunst. From the manual dunst(1):
+
+# When paused dunst will not display any notifications but keep all notifications
+# in a queue.  This can for example be wrapped around a screen locker (i3lock, slock)
+# to prevent flickering of notifications through the lock and
+# to read all missed notifications after returning to the computer.
+killall -SIGUSR1 dunst
+i3lock -u --nofork -i $tmpbg
+killall -SIGUSR2 dunst
 rm $tmpbg
