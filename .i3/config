@@ -220,6 +220,7 @@ bindsym $mod+Shift+x mode "system: [p]oweroff [r]eboot [l]ogout"
 bar {
         status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status_modules
         position top
+        separator_symbol " "
         colors {
             background          #1F2326
             statusline          #aaaaaa
