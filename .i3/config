@@ -138,9 +138,9 @@ assign [class="^Thunderbird$"] $ws4
 # Looks neat :)
 hide_edge_borders both
 
-# always float the 'display' windows
-for_window [class="Display"] floating enable
-for_window [class="Display"] border none
+# Always float windows with title 'clipqr'.
+# This is for the clipqr.sh script which generates a QR code from clipboard.
+for_window [title="clipqr"] floating enable
 
 # this works for Firefox and probably other programs too
 #for_window [instance="^Download"] floating enable
