@@ -60,12 +60,6 @@ label=
 markup=pango
 min_width= ■■■■■
 
-[time]
-label=
-command=date '+%a, %b %d %Y'
-interval=5
-
-[time]
-label=
-command=date '+%H:%M:%S'
+[timedate]
+command=date '+ %a, %b %d %Y   %H:%M:%S'
 interval=1
