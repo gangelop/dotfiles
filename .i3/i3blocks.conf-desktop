@@ -36,7 +36,7 @@ color=#8080ff
 interval=10
 
 [disk]
-label=⛁ 
+label= 
 interval=30
 
 [iface]
