@@ -47,6 +47,7 @@ instance=wlp3s0
 interval=10
 
 [load_average]
+label= 
 interval=5
 
 [batterybar]
