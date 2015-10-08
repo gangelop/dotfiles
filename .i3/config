@@ -203,6 +203,10 @@ mode $mode-brightness {
     bindsym Left exec "kbdlight down"
     bindsym Right exec "kbdlight up"
 
+    bindsym 1 exec "xbacklight -set 10"
+    bindsym 9 exec "xbacklight -set 100"
+    bindsym 0 exec "xbacklight -set 100"
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
