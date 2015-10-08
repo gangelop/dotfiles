@@ -164,7 +164,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+
+set $mode-resize " resize"
+bindsym $mod+r mode $mode-resize
+mode $mode-resize {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing h will shrink the window’s width.
@@ -187,7 +190,9 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-mode "brightness" {
+set $mode-brightness " brightness"
+bindsym $mod+b mode $mode-brightness
+mode $mode-brightness {
     bindsym k exec "xbacklight -inc 5"
     bindsym j exec "xbacklight -dec 5"
     bindsym h exec "kbdlight down"
@@ -202,7 +207,9 @@ mode "brightness" {
     bindsym Escape mode "default"
 }
 
-mode " : [p]oweroff [r]eboot [l]ogout" {
+set $mode-poweroff " : [p]oweroff [r]eboot [l]ogout"
+bindsym $mod+Shift+x mode $mode-poweroff
+mode $mode-poweroff {
     bindsym p exec "poweroff"
     bindsym r exec "reboot"
     bindsym l exec "i3-msg exit"
@@ -211,9 +218,6 @@ mode " : [p]oweroff [r]eboot [l]ogout" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
-bindsym $mod+b mode "brightness"
-bindsym $mod+Shift+x mode " : [p]oweroff [r]eboot [l]ogout"
 
 
 # i3 bar, yay!
