@@ -38,7 +38,7 @@ map <F7> : call RunPython3()<CR>
 
 func! CompileRunC()
     exec "w"
-    exec "!gcc -Wall -ansi % -o %<.out && ./%<.out" 
+    exec "!gcc -Wall -ansi % -o %<.out && ./%<.out"
 endfunc
 
 func! CompileRunCPlusPlus()
@@ -48,7 +48,7 @@ endfunc
 
 func! RunPython2()
     exec "w"
-    exec "!python2 %" 
+    exec "!python2 %"
 endfunc
 
 func! RunPython3()
@@ -58,7 +58,7 @@ endfunc
 
 func! RunPerl()
     exec "w"
-    exec "!perl %" 
+    exec "!perl %"
 endfunc
 
 " SKELETONS
