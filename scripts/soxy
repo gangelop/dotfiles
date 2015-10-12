@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -o nounset
+
+track_path="$1"
+track="$(basename "$track_path")"
+
+sox --show-progress "$track_path" -n spectrogram -o "$PWD"/"$track".png
