@@ -22,4 +22,6 @@ highlight StatusLineNC  ctermfg=darkgrey
 highlight WildMenu      ctermfg=white ctermbg=black
 highlight CursorLine    cterm=none
 highlight CursorLineNr  ctermbg=none ctermfg=lightgrey
+highlight CursorLine    term=reverse ctermbg=black
+
 set cursorline
