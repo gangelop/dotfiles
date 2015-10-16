@@ -21,6 +21,6 @@ convert $tmpbg -scale 10% -scale 1000% -fill black -colorize 25% $tmpbg
 # to prevent flickering of notifications through the lock and
 # to read all missed notifications after returning to the computer.
 killall -SIGUSR1 dunst
-i3lock -u --nofork -i $tmpbg
+i3lock --nofork -i $tmpbg
 killall -SIGUSR2 dunst
 rm $tmpbg
