@@ -38,6 +38,7 @@ setopt histignorealldups
 
 export EDITOR=vim
 export PATH=$PATH:$HOME/scripts
+export PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
 
 setopt emacs
 
