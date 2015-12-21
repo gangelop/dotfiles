@@ -132,7 +132,6 @@ assign [class="^Pidgin$"] $ws2
 assign [class="^HipChat$"] $ws2
 assign [class="^Hexchat$"] $ws2
 assign [class="^Firefox$"] $ws3
-assign [class="^Chromium$"] $ws3
 assign [class="^Clementine$"] $ws9
 assign [class="^Thunderbird$"] $ws4
 
