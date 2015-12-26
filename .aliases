@@ -12,4 +12,3 @@ alias xxsos='xsos -ay'
 alias ips4='ip -f inet -o a | awk '\''{ print $2,$4 }'\'
 alias ips6='ip -f inet6 -o a | awk '\''{ print $2,$4 }'\'
 alias ips='ips4'
-alias jkdate="date +%F\ %H:%M:%S\ %z"
