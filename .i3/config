@@ -124,7 +124,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # move workspace to the next output (right)
 # if there are only two outputs this just switches between them
-bindsym $mod+x move workspace to output right
+bindsym $mod+x move workspace to output left
+bindsym $mod+c move workspace to output right
 
 # Assign specific applications to workspaces
 assign [class="^Skype$"] $ws2
