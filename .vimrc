@@ -18,7 +18,8 @@ set wildmenu
 set laststatus=2
 set modeline
 
-colorscheme custom
+let g:alduin_Shout_Windhelm = 1
+colorscheme alduin
 
 " Only works on version >= 7.3
 " see http://vim.wikia.com/wiki/Encryption for details
