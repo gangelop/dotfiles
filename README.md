@@ -7,7 +7,7 @@ This software is released to the public domain. See `UNLICENSE.md` for more info
 
 ## Usage
 
-The `configure` script is meant to work with **zsh only**..
+The `configure` script is meant to work with **zsh only**.
 
 clone the repo:
 ```bash
