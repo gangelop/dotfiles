@@ -28,8 +28,11 @@ set cryptmethod=blowfish
 " Toggles NERDTree with 'ctrl+t'
 map <C-t> : NERDTreeToggle<CR>
 
-" Press Ctrl+H to toggle search highlighting
-map <C-h> : set hlsearch!<CR>
+" Press Ctrl+<h,j,k,l> to navigate tabs
+map <C-h> : tabprevious<CR>
+map <C-j> : tabnext<CR>
+map <C-k> : tabprevious<CR>
+map <C-l> : tabnext<CR>
 
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 map <F4> : call CompileRunC()<CR>
