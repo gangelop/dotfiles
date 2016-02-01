@@ -25,7 +25,7 @@ colorscheme alduin
 " see http://vim.wikia.com/wiki/Encryption for details
 set cryptmethod=blowfish
 
-" Toggles NERDTree with 'ctrl+t'
+" Toggles NERDTree with Ctrl+t
 map <C-t> : NERDTreeToggle<CR>
 
 " Press Ctrl+<h,j,k,l> to navigate tabs
