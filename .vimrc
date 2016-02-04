@@ -70,7 +70,7 @@ endfunc
 " copies the url to clipboard
 function HasteUpload()
     exec "w"
-    exec "!haste % | xsel -ib"
+    exec "!haste % | tee >(xsel -ib)"
 endfunction
 
 " SKELETONS
