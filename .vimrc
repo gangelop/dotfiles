@@ -85,6 +85,7 @@ endfunction
 :autocmd BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
 :autocmd BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
 :autocmd BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
+:autocmd BufNewFile *.py     0r ~/.vim/skeleton/skeleton.py
 
 " plugin-specific stuff
 
