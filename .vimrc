@@ -66,6 +66,13 @@ func! RunPerl()
     exec "!perl %"
 endfunc
 
+" writes the file and uploads it to hastebin.com
+" copies the url to clipboard
+function HasteUpload()
+    exec "w"
+    exec "!haste % | xsel -ib"
+endfunction
+
 " SKELETONS
 " When I open a new file, vim detects the file extention and
 " automatically fills in a basic structure for that particular file type.
