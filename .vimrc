@@ -24,7 +24,7 @@ colorscheme alduin
 
 " Only works on version >= 7.3
 " see http://vim.wikia.com/wiki/Encryption for details
-set cryptmethod=blowfish
+set cryptmethod=blowfish2
 
 " Toggles NERDTree with Ctrl+t
 map <C-t> : NERDTreeToggle<CR>
