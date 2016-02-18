@@ -48,3 +48,6 @@ setopt emacs
 zsh_syntax_hi=/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -r $zsh_syntax_hi ] && source $zsh_syntax_hi
 unset zsh_syntax_hi
+
+# fuzy finder!
+. /etc/profile.d/fzf.zsh
