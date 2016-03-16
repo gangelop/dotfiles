@@ -19,7 +19,7 @@ set $mod Mod4
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
-font pango:Ubuntu 10
+font pango:inconsolata 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -31,7 +31,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec j4-dmenu-desktop --dmenu 'dmenu -i -fn "ubuntu-10"'
+bindsym $mod+d exec j4-dmenu-desktop --dmenu 'dmenu -i -fn "inconsolata-10"'
 
 # change focus
 bindsym $mod+h focus left
@@ -258,7 +258,7 @@ bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
-bindsym $mod+p      exec "passmenu -fn 'ubuntu-10'"
+bindsym $mod+p      exec "passmenu -fn 'inconsolata-10'"
 bindsym $mod+t      exec "/home/george/scripts/tmenu"
 
 # background wallpaper
