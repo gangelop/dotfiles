@@ -40,12 +40,12 @@ map <F7> : call RunPython3()<CR>
 
 func! CompileRunC()
     exec "w"
-    exec "!gcc -Wall -ansi % -o %<.out && ./%<.out"
+    exec "!gcc -Wall % -o %<.out && ./%<.out"
 endfunc
 
 func! CompileRunCPlusPlus()
     exec "w"
-    exec "!g++ -Wall -ansi % -o %<.out && ./%<.out"
+    exec "!g++ -Wall % -o %<.out && ./%<.out"
 endfunc
 
 func! RunPython2()
