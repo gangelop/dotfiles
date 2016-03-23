@@ -9,6 +9,7 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+set showcmd
 
 syntax on
 filetype on
