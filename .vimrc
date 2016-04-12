@@ -78,12 +78,12 @@ endfunction
 " something like:
 " #!/bin/sh
 
-:autocmd BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
-:autocmd BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
-:autocmd BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
-:autocmd BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
-:autocmd BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
-:autocmd BufNewFile *.py     0r ~/.vim/skeleton/skeleton.py
+au BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
+au BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
+au BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
+au BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
+au BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
+au BufNewFile *.py     0r ~/.vim/skeleton/skeleton.py
 
 " plugin-specific stuff
 
