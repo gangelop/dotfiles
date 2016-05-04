@@ -50,4 +50,4 @@ zsh_syntax_hi=/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highligh
 unset zsh_syntax_hi
 
 # fuzy finder!
-. /usr/share/fzf/fzf.zsh
+. /usr/share/fzf/key-bindings.zsh
