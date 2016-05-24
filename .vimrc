@@ -33,6 +33,9 @@ map <C-t> : NERDTreeToggle<CR>
 map <C-h> : tabprevious<CR>
 map <C-l> : tabnext<CR>
 
+" Toggle relativenumber
+map <leader>r : set relativenumber!<CR>
+
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 map <F4> : call CompileRunC()<CR>
 map <F5> : call RunPerl()<CR>
