@@ -272,3 +272,6 @@ exec --no-startup-id "dunst"
 
 # start network manager applet
 exec --no-startup-id "nm-applet"
+
+# start firewalld manager applet
+exec --no-startup-id "firewall-applet"
