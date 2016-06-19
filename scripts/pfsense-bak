@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -o errexit
+
+# pfsense automated backup script
+# Based on https://doc.pfsense.org/index.php/Remote_Config_Backup
+
+host="192.168.1.1"
+username="admin"
+password="pfsense"
+
+script_name="$(basename "$0")"
+tmpdir="$(mktemp -d -t "${script_name}.XXXXXXXXXX")"
+backup_dir="/storage/backup/pfsense.lan"
+backup_file="${backup_dir}/config-${host}-$(date +%Y%m%d%H%M%S).xml"
+
+[ -d $backup_dir ] || mkdir $backup_dir
+
+echo ":: getting cookie"
+wget -qO- --keep-session-cookies --save-cookies "$tmpdir"/cookies.txt \
+  --no-check-certificate https://${host}/diag_backup.php \
+  | grep "name='__csrf_magic'" | sed 's/.*value="\(.*\)".*/\1/' > "$tmpdir"/csrf.txt
+
+echo ":: logging in"
+wget -qO- --keep-session-cookies --load-cookies "$tmpdir"/cookies.txt \
+  --save-cookies "$tmpdir"/cookies.txt --no-check-certificate \
+  --post-data "login=Login&usernamefld=${username}&passwordfld=${password}&__csrf_magic=$(cat "$tmpdir"/csrf.txt)" \
+  https://${host}/diag_backup.php  | grep "name='__csrf_magic'" \
+  | sed 's/.*value="\(.*\)".*/\1/' > "$tmpdir"/csrf2.txt
+
+echo ":: downloading backup"
+wget --keep-session-cookies --load-cookies "$tmpdir"/cookies.txt --no-check-certificate \
+  --post-data "Submit=download&donotbackuprrd=yes&__csrf_magic=$(head -n 1 "$tmpdir"/csrf2.txt)" \
+  https://${host}/diag_backup.php -O "$backup_file"
+
+rm -r "$tmpdir"
