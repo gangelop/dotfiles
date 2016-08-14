@@ -88,6 +88,12 @@ au BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
 au BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
 au BufNewFile *.py     0r ~/.vim/skeleton/skeleton.py
 
+" http://stackoverflow.com/questions/12767024/changing-filetype-based-on-file-extention-in-vim
+" for /proc/mounts files
+augroup filetypedetect
+    au BufNewFile,BufNewFile,BufRead mounts   :set ft=fstab
+augroup END
+
 " plugin-specific stuff
 
 let g:ctrlp_show_hidden = 1
