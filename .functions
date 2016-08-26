@@ -6,3 +6,7 @@ function passdir {
         unset PASSWORD_STORE_DIR
     fi
 }
+
+function vimdiffhex {
+    vimdiff <(xxd -a "$1") <(xxd -a "$2")
+}
