@@ -18,6 +18,8 @@ set number
 set wildmenu
 set laststatus=2
 set modeline
+set splitright
+set splitbelow
 
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme alduin
