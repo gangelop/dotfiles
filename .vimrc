@@ -1,6 +1,6 @@
-"-----------------------
-" " just vundle things "
-"-----------------------
+"------------------------"
+" " just vundle things " "
+"------------------------"
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,9 +19,9 @@ filetype plugin on
 filetype indent on
 "-------------------------
 
-"-------------------
-" " plugin options "
-"-------------------
+"--------------------"
+" " plugin options " "
+"--------------------"
 let g:ctrlp_show_hidden = 1
 
 if !exists('g:airline_symbols')
