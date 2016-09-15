@@ -13,6 +13,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'AlessandroYorba/Alduin'
+Plugin 'AlessandroYorba/Sierra'
 
 call vundle#end()
 filetype plugin on
