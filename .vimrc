@@ -69,33 +69,25 @@ map <leader>r : set relativenumber!<CR>
 
 "http://vim.wikia.com/wiki/Map_function_keys_to_compile_and_run_your_code"
 map <F4> : call CompileRunC()<CR>
-map <F5> : call RunPerl()<CR>
 map <F6> : call RunPython2()<CR>
 map <F7> : call RunPython3()<CR>
 
 func! CompileRunC()
     exec "w"
-    exec "!gcc -g -Wall % -o %<&& ./%<"
-endfunc
-
-func! CompileRunCPlusPlus()
-    exec "w"
-    exec "!g++ -Wall % -o %< && ./%<"
+    exec "silent !gcc -g -Wall % -o %<"
+    exec "vsplit term://./%<"
 endfunc
 
 func! RunPython2()
     exec "w"
-    exec "!python2 %"
+    exec "vsplit term://python2\\ %"
+    exec "startinsert"
 endfunc
 
 func! RunPython3()
     exec "w"
-    exec "!python3 %"
-endfunc
-
-func! RunPerl()
-    exec "w"
-    exec "!perl %"
+    exec "vsplit term://python3\\ %"
+    exec "startinsert"
 endfunc
 
 " writes the file and uploads it to hastebin.com
