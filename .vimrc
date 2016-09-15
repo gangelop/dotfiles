@@ -49,10 +49,7 @@ set showcmd
 "-------------------------
 
 syntax on
-set hlsearch
 set number
-set wildmenu
-set laststatus=2
 set modeline
 set splitright
 set splitbelow
