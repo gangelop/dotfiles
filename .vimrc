@@ -1,7 +1,40 @@
+"-----------------------
+" " just vundle things "
+"-----------------------
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()
 filetype plugin on
 filetype indent on
+"-------------------------
 
-"python PEP-8 friendly indentation: http://henry.precheur.org/vim/python"
+"-------------------
+" " plugin options "
+"-------------------
+let g:ctrlp_show_hidden = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_theme='zenburn'
+
+"-------------------------------------
+" python PEP-8 friendly indentation:
+" http://henry.precheur.org/vim/python
+"-------------------------------------
 set autoindent
 set smartindent
 set tabstop=4
@@ -10,9 +43,9 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set showcmd
+"-------------------------
 
 syntax on
-filetype on
 set hlsearch
 set number
 set wildmenu
@@ -93,13 +126,3 @@ augroup filetypedetect
 augroup END
 
 " plugin-specific stuff
-
-let g:ctrlp_show_hidden = 1
-
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_theme='zenburn'
