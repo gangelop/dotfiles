@@ -1,6 +1,6 @@
 [core]
     excludesfile = ~/.gitignore_global
-    editor = vim
+    editor = nvim
 [credential]
     helper = cache
 [alias]
