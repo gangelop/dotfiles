@@ -91,10 +91,10 @@ endfunc
 
 " writes the file and uploads it to hastebin.com
 " copies the url to clipboard
-function HasteUpload()
+func! HasteUpload()
     exec "w"
     exec "!haste % | tee >(xsel -ib)"
-endfunction
+endfunc
 
 " SKELETONS
 " When I open a new file, vim detects the file extention and
