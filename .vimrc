@@ -31,6 +31,9 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_theme='zenburn'
 
+let g:alduin_Shout_Aura_Whisper = 1
+colorscheme alduin
+
 "-------------------------------------
 " python PEP-8 friendly indentation:
 " http://henry.precheur.org/vim/python
@@ -53,9 +56,6 @@ set laststatus=2
 set modeline
 set splitright
 set splitbelow
-
-let g:alduin_Shout_Aura_Whisper = 1
-colorscheme alduin
 
 " Toggles NERDTree with Ctrl+t
 map <C-t> : NERDTreeToggle<CR>
