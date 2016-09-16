@@ -36,7 +36,7 @@ unset file
 setopt histignorespace
 setopt histignorealldups
 
-export EDITOR=vim
+export EDITOR=nvim
 export PATH=$PATH:$HOME/scripts
 export PATH=$PATH:"$(ruby -e 'print Gem.user_dir')/bin"
 
