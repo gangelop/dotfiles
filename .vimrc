@@ -55,6 +55,7 @@ set number
 set modeline
 set splitright
 set splitbelow
+set mouse=""
 
 "------------------"
 " " key bindings " "
