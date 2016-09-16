@@ -67,6 +67,11 @@ map <C-t> : NERDTreeToggle<CR>
 map <C-h> : tabprevious<CR>
 map <C-l> : tabnext<CR>
 
+" C-h doesn't work in nvim for some reason. :(
+" Using Alt key bindings as well.
+map <M-h> : tabprevious<CR>
+map <M-l> : tabnext<CR>
+
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
 
