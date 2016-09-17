@@ -15,6 +15,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'AlessandroYorba/Alduin'
 Plugin 'AlessandroYorba/Sierra'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin on
