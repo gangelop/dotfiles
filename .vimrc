@@ -33,6 +33,8 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:airline_theme='zenburn'
 
+set termguicolors
+let g:alduin_Shout_Summon_Odahviing = 1
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme alduin
 
