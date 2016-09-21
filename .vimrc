@@ -17,6 +17,7 @@ Plugin 'AlessandroYorba/Alduin'
 Plugin 'AlessandroYorba/Sierra'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin on
