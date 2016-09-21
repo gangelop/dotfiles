@@ -8,5 +8,5 @@ function passdir {
 }
 
 function vimdiffhex {
-    vimdiff <(xxd -a "$1") <(xxd -a "$2")
+    nvim - d <(xxd -a "$1") <(xxd -a "$2")
 }
