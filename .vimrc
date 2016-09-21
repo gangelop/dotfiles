@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'AlessandroYorba/Alduin'
 Plugin 'AlessandroYorba/Sierra'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'mhinz/vim-startify'
 
 call vundle#end()
 filetype plugin on
