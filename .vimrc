@@ -27,6 +27,15 @@ filetype indent on
 "--------------------"
 " " plugin options " "
 "--------------------"
+if has('nvim')
+let g:ascii = [
+      \ '                        __',
+      \ '    ___  ___ ___.--.--.|__|.--------.',
+      \ '   / _ \/ -_) _ |  |  ||  ||        |',
+      \ '  /_//_/\__/\___/\___/ |__||__|__|__|',
+      \ ''
+      \]
+else
 let g:ascii = [
       \ '          __',
       \ '  .--.--.|__|.--------.',
@@ -34,6 +43,8 @@ let g:ascii = [
       \ '   \___/ |__||__|__|__|',
       \ ''
       \]
+endif
+
 let g:startify_custom_header = g:ascii
 
 let g:ctrlp_show_hidden = 1
