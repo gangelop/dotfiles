@@ -26,6 +26,15 @@ filetype indent on
 "--------------------"
 " " plugin options " "
 "--------------------"
+let g:ascii = [
+      \ '        __',
+      \ '.--.--.|__|.--------.',
+      \ '|  |  ||  ||        |',
+      \ ' \___/ |__||__|__|__|',
+      \ ''
+      \]
+let g:startify_custom_header = g:ascii
+
 let g:ctrlp_show_hidden = 1
 
 if !exists('g:airline_symbols')
