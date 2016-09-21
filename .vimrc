@@ -73,7 +73,7 @@ set mouse=""
 "------------------"
 
 " Toggles NERDTree with Ctrl+t
-map <C-t> : NERDTreeToggle<CR>
+map <leader>t : NERDTreeToggle<CR>
 
 " Press Ctrl+<h,l> to navigate tabs
 map <C-h> : tabprevious<CR>
