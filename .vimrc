@@ -64,7 +64,6 @@ colorscheme alduin
 " http://henry.precheur.org/vim/python  "
 "---------------------------------------"
 set autoindent
-set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
