@@ -100,7 +100,6 @@ map <M-l> : tabnext<CR>
 map <leader>r : set relativenumber!<CR>
 "------------------"
 
-
 "---------------"
 " " functions " "
 "---------------"
