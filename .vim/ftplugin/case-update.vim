@@ -15,8 +15,8 @@ ab <buffer> hi Hello,<CR><CR>Thank you for contacting Red Hat Support. My name i
 ab <buffer> hifts Hello,<CR><CR>My name is George Angelopoulos. I am an engineer in the EMEA team and I will be assisting you with this support case as part of the 24x7 workflow.
 
 " thanks "
-ab <buffer> ty4sos Thank you for providing the sosreport.
-ab <buffer> ty4data Thank you for providing that data.
+ab <buffer> tysos Thank you for providing the sosreport.
+ab <buffer> tydata hank you for providing that data.
 
 " I need a sosreport "
 ab <buffer> sospls Can you please generate an sosreport from this system and attach it to the case? This will give me a more direct view of the system as well as access to system logs.<CR><CR>  What is a sosreport and how to create one in Red Hat Enterprise Linux 4.6 and later?<CR>https://access.redhat.com/solutions/3592<CR>
