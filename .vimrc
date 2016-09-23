@@ -77,6 +77,8 @@ set splitright
 set splitbelow
 set mouse=""
 set laststatus=2
+set ignorecase
+set smartcase
 "----------------------"
 
 "------------------"
