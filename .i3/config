@@ -259,7 +259,6 @@ bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
 bindsym $mod+p      exec "passmenu -fn 'inconsolata-10'"
-bindsym $mod+t      exec "/home/george/scripts/tmenu"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
