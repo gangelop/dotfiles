@@ -1,31 +1,23 @@
-"------------------------"
-" " just vundle things " "
-"------------------------"
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-startify'
-Plugin 'majutsushi/tagbar'
+"--------------"
+" " vim-plug " "
+"--------------"
+call plug#begin()
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-startify'
+Plug 'majutsushi/tagbar'
 
 " colorschemes
-Plugin 'AlessandroYorba/Alduin'
-Plugin 'AlessandroYorba/Sierra'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'whatyouhide/vim-gotham'
-
-call vundle#end()
-filetype plugin on
-filetype indent on
-"------------------------"
+Plug 'AlessandroYorba/Alduin'
+Plug 'AlessandroYorba/Sierra'
+Plug 'nanotech/jellybeans.vim'
+Plug 'whatyouhide/vim-gotham'
+call plug#end()
+"--------------"
 
 "--------------------"
 " " plugin options " "
@@ -66,6 +58,8 @@ colorscheme alduin
 "----------------------"
 " " general settings " "
 "----------------------"
+filetype plugin on
+filetype indent on
 " indentation stuff     "
 " python pep-8-firendly "
 set autoindent
