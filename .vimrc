@@ -79,6 +79,7 @@ set modeline
 set splitright
 set splitbelow
 set mouse=""
+set laststatus=2
 "----------------------"
 
 "------------------"
