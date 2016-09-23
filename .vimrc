@@ -107,7 +107,11 @@ command! HasteUpload call HasteUpload()
 
 func! HasteUpload()
     exec "w"
-    exec "!haste % | tee >(xsel -ib)"
+    if has('nvim')
+        exec ":terminal haste % | tee >(xsel -ib)"
+    else
+        exec "!haste % | tee >(xsel -ib)"
+    endif
 endfunc
 
 "---------------"
