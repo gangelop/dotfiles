@@ -88,14 +88,17 @@ set laststatus=2
 " Toggles NERDTree with Ctrl+t
 map <leader>t : NERDTreeToggle<CR>
 
+" C-h doesn't work in nvim and some terminals
+" WORKAROUND: https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
 " Press Ctrl+<h,l> to navigate tabs
 map <C-h> : tabprevious<CR>
 map <C-l> : tabnext<CR>
 
-" C-h doesn't work in nvim for some reason. :(
-" Using Alt key bindings as well.
-map <M-h> : tabprevious<CR>
-map <M-l> : tabnext<CR>
+" move accross windows with Alt+<h,j,k,l>
+map <M-h> <C-w>h
+map <M-j> <C-w>j
+map <M-k> <C-w>k
+map <M-l> <C-w>l
 
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
