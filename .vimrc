@@ -22,7 +22,7 @@ Plugin 'majutsushi/tagbar'
 call vundle#end()
 filetype plugin on
 filetype indent on
-"-------------------------
+"------------------------"
 
 "--------------------"
 " " plugin options " "
@@ -58,11 +58,13 @@ let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme alduin
+"--------------------"
 
-"---------------------------------------"
-" " python PEP-8 friendly indentation " "
-" http://henry.precheur.org/vim/python  "
-"---------------------------------------"
+"----------------------"
+" " general settings " "
+"----------------------"
+" indentation stuff     "
+" python pep-8-firendly "
 set autoindent
 set tabstop=4
 set softtabstop=4
@@ -70,7 +72,6 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set showcmd
-"---------------------------------------"
 
 syntax on
 set number
@@ -78,11 +79,11 @@ set modeline
 set splitright
 set splitbelow
 set mouse=""
+"----------------------"
 
 "------------------"
 " " key bindings " "
 "------------------"
-
 " Toggles NERDTree with Ctrl+t
 map <leader>t : NERDTreeToggle<CR>
 
@@ -97,14 +98,15 @@ map <M-l> : tabnext<CR>
 
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
-
 "------------------"
 
+
+"---------------"
+" " functions " "
+"---------------"
 " writes the file and uploads it to hastebin.com
 " copies the url to clipboard
-
 command! HasteUpload call HasteUpload()
-
 func! HasteUpload()
     exec "w"
     if has('nvim')
@@ -113,16 +115,11 @@ func! HasteUpload()
         exec "!haste % | tee >(xsel -ib)"
     endif
 endfunc
+"---------------"
 
 "---------------"
 " " skeletons " "
 "---------------"
-" When I open a new file, vim detects the file extention and
-" automatically fills in a basic structure for that particular file type.
-" For example, if I do `vim /tmp/foobar.sh`, vim will automatically include
-" something like:
-" #!/bin/sh
-
 au BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
 au BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
 au BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
