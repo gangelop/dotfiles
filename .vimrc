@@ -13,11 +13,14 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-startify'
+Plugin 'majutsushi/tagbar'
+
+" colorschemes
 Plugin 'AlessandroYorba/Alduin'
 Plugin 'AlessandroYorba/Sierra'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'mhinz/vim-startify'
-Plugin 'majutsushi/tagbar'
+Plugin 'whatyouhide/vim-gotham'
 
 call vundle#end()
 filetype plugin on
