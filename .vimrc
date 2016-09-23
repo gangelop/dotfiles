@@ -102,6 +102,9 @@ map <leader>r : set relativenumber!<CR>
 
 " writes the file and uploads it to hastebin.com
 " copies the url to clipboard
+
+command! HasteUpload call HasteUpload()
+
 func! HasteUpload()
     exec "w"
     exec "!haste % | tee >(xsel -ib)"
