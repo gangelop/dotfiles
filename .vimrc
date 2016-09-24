@@ -99,6 +99,12 @@ map <M-j> <C-w>j
 map <M-k> <C-w>k
 map <M-l> <C-w>l
 
+" move windows
+map <S-M-h> <C-w><S-h>
+map <S-M-j> <C-w><S-j>
+map <S-M-k> <C-w><S-k>
+map <S-M-l> <C-w><S-l>
+
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
 "------------------"
