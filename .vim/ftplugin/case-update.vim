@@ -16,7 +16,7 @@ ia <buffer> hifts Hello,<CR><CR>My name is George Angelopoulos. I am an engineer
 
 " thanks "
 ia <buffer> tysos Thank you for providing the sosreport.
-ia <buffer> tydata hank you for providing that data.
+ia <buffer> tydata Thank you for providing that data.
 
 " I need a sosreport "
 ia <buffer> sospls Can you please generate an sosreport from this system and attach it to the case? This will give me a more direct view of the system as well as access to system logs.<CR><CR>  What is a sosreport and how to create one in Red Hat Enterprise Linux 4.6 and later?<CR>https://access.redhat.com/solutions/3592<CR>
