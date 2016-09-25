@@ -7,7 +7,13 @@ set -o errexit
 
 host="192.168.1.1"
 username="admin"
-password="pfsense"
+
+echo -n "password: "
+stty -echo
+read password
+stty echo
+echo ""
+
 
 script_name="$(basename "$0")"
 tmpdir="$(mktemp -d -t "${script_name}.XXXXXXXXXX")"
