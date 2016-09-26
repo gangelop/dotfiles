@@ -79,6 +79,7 @@ set mouse=""
 set laststatus=2
 set ignorecase
 set smartcase
+set clipboard+=unnamedplus
 "----------------------"
 
 "------------------"
