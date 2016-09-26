@@ -10,6 +10,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
+Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
@@ -47,8 +48,7 @@ let g:ctrlp_show_hidden = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
+let g:airline_powerline_fonts=1
 let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
