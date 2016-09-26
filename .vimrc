@@ -11,6 +11,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
 Plug 'edkolev/tmuxline.vim'
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
