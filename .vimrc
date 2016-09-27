@@ -89,6 +89,9 @@ set clipboard+=unnamedplus
 " Toggles NERDTree with Ctrl+t
 map <leader>t : NERDTreeToggle<CR>
 
+" Toggles TagBar with Ctrl+g
+map <leader>b : TagbarToggle<CR>
+
 " C-h doesn't work in nvim and some terminals
 " WORKAROUND: https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
 " navigate tabs with Ctrl+<h,l>
