@@ -30,3 +30,7 @@ ia <buffer> ithelps? Please let me know if this information helps or if there is
 " kthnxbye "
 ia <buffer> bb Kind regards,<CR>George
 ia <buffer> cheers Cheers,<CR>George
+
+" useful links "
+ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
+ia <buffer> soclink Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
