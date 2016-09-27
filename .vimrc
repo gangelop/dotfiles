@@ -90,10 +90,10 @@ set clipboard+=unnamedplus
 "------------------"
 " " key bindings " "
 "------------------"
-" Toggles NERDTree with Ctrl+t
+" Toggles NERDTree
 map <leader>t : NERDTreeToggle<CR>
 
-" Toggles TagBar with Ctrl+g
+" Toggles TagBar
 map <leader>b : TagbarToggle<CR>
 
 " C-h doesn't work in nvim and some terminals
