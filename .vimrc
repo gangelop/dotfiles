@@ -18,6 +18,7 @@ Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sierra'
 Plug 'nanotech/jellybeans.vim'
 Plug 'whatyouhide/vim-gotham'
+Plug 'marcopaganini/termschool-vim-theme'
 call plug#end()
 "--------------"
 
@@ -53,7 +54,7 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
-colorscheme alduin
+colorscheme termschool
 "--------------------"
 
 "----------------------"
