@@ -95,6 +95,9 @@ map <leader>t : NERDTreeToggle<CR>
 
 " Toggles TagBar
 map <leader>b : TagbarToggle<CR>
+"
+" Toggles spelling
+map <leader>s : set spell!<CR>
 
 " C-h doesn't work in nvim and some terminals
 " WORKAROUND: https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
