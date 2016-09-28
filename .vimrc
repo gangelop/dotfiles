@@ -13,7 +13,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
-Plug 'edkolev/tmuxline.vim'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
 " colorschemes
@@ -22,6 +21,7 @@ Plug 'AlessandroYorba/Sierra'
 Plug 'nanotech/jellybeans.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme', { 'frozen': 1 }
+Plug 'iCyMind/NeoSolarized'
 call plug#end()
 "--------------"
 
@@ -85,6 +85,7 @@ set laststatus=2
 set ignorecase
 set smartcase
 set clipboard+=unnamedplus
+set termguicolors
 "----------------------"
 
 "------------------"
