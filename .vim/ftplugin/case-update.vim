@@ -10,6 +10,7 @@ ia <buffer> rhel Red Hat Enterprise Linux
 ia <buffer> asap as soon as possible
 ia <buffer> rh Red Hat
 ia <buffer> fs file system
+ia <buffer> kcs knowledgebase solution
 
 " opening phrases "
 ia <buffer> hi Hello,<CR><CR>Thank you for contacting Red Hat Support. My name is George Angelopoulos and I have taken ownership of this case.
