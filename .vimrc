@@ -77,7 +77,7 @@ set number
 set modeline
 set splitright
 set splitbelow
-set mouse=""
+set mouse=a
 set laststatus=2
 set ignorecase
 set smartcase
