@@ -63,7 +63,7 @@ colorscheme termschool
 filetype plugin on
 filetype indent on
 " indentation stuff     "
-" python pep-8-firendly "
+" python pep-8-friendly "
 set autoindent
 set tabstop=4
 set softtabstop=4
