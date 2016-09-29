@@ -87,6 +87,9 @@ set termguicolors
 
 " " key bindings " {{{
 "--------------------"
+
+let mapleader = ","
+
 " Toggles NERDTree
 map <leader>t : NERDTreeToggle<CR>
 
