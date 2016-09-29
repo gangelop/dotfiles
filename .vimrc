@@ -1,6 +1,5 @@
-"--------------"
-" " vim-plug " "
-"--------------"
+" " vim-plug " {{{
+"----------------"
 " For installation:
 " curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -23,11 +22,10 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme', { 'frozen': 1 }
 Plug 'iCyMind/NeoSolarized'
 call plug#end()
-"--------------"
+"--------------"}}}
 
-"--------------------"
-" " plugin options " "
-"--------------------"
+" " plugin options " {{{
+"----------------------"
 if has('nvim')
 let g:ascii = [
       \ '                        __',
@@ -58,11 +56,10 @@ let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme termschool
-"--------------------"
+"----------------------"}}}
 
-"----------------------"
-" " general settings " "
-"----------------------"
+" " general settings " {{{
+"------------------------"
 filetype plugin on
 filetype indent on
 " indentation stuff     "
@@ -86,11 +83,10 @@ set ignorecase
 set smartcase
 set clipboard+=unnamedplus
 set termguicolors
-"----------------------"
+"------------------------"}}}
 
-"------------------"
-" " key bindings " "
-"------------------"
+" " key bindings " {{{
+"--------------------"
 " Toggles NERDTree
 map <leader>t : NERDTreeToggle<CR>
 
@@ -120,11 +116,10 @@ map <S-M-l> <C-w><S-l>
 
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
-"------------------"
+"--------------------"}}}
 
-"---------------"
-" " functions " "
-"---------------"
+" " functions " {{{
+"-----------------"
 " writes the file and uploads it to hastebin.com
 " copies the url to clipboard
 command! HasteUpload call HasteUpload()
@@ -136,15 +131,15 @@ func! HasteUpload()
         exec "!haste % | tee >(xsel -ib)"
     endif
 endfunc
-"---------------"
+"-----------------"}}}
 
-"---------------"
-" " skeletons " "
-"---------------"
+" " skeletons " {{{
+"-----------------"
 au BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
 au BufNewFile *.sh    0r ~/.vim/skeleton/skeleton.sh
 au BufNewFile *.zsh    0r ~/.vim/skeleton/skeleton.zsh
 au BufNewFile *.c     0r ~/.vim/skeleton/skeleton.c
 au BufNewFile *.pl     0r ~/.vim/skeleton/skeleton.pl
 au BufNewFile *.py     0r ~/.vim/skeleton/skeleton.py
-"---------------"
+"-----------------"}}}
+" vim:fdm=marker
