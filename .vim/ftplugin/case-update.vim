@@ -33,6 +33,7 @@ ia <buffer> ithelps? Please let me know if this information helps or if there is
 " kthnxbye "
 ia <buffer> bb Kind regards,<CR>George
 ia <buffer> cheers Cheers,<CR>George
+ia <buffer> sig Kind regards,<CR>George Angelopoulos<CR>Technical Support Engineer - Red Hat
 
 " useful links "
 ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
