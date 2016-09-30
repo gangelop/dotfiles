@@ -1,6 +1,5 @@
-"-----------------"
-" "abbreviations" "
-"-----------------"
+" "abbreviations" {{{
+"-------------------"
 
 " common stuff "
 ia <buffer> teh the
@@ -38,3 +37,13 @@ ia <buffer> sig Kind regards,<CR>George Angelopoulos<CR>Technical Support Engine
 " useful links "
 ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
 ia <buffer> soclink Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
+"}}}
+
+" "miscellaneous" {{{
+"-------------------"
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+" }}}
+" vim:fdm=marker
