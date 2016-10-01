@@ -16,6 +16,8 @@ ia <buffer> sc support case
 ia <buffer> hi Hello,<CR><CR>Thank you for contacting Red Hat Support. My name is George Angelopoulos and I have taken ownership of this case.
 ia <buffer> hifts Hello,<CR><CR>My name is George Angelopoulos. I am an engineer in the EMEA team and I will be assisting you with this support case as part of the 24x7 workflow.
 
+ia <buffer> plswait Please allow me some time to look into the sosreport data and I will update you.
+
 " thanks "
 ia <buffer> tysos Thank you for providing the sosreport.
 ia <buffer> tydata Thank you for providing that data.
