@@ -22,8 +22,7 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme', { 'frozen': 1 }
 Plug 'iCyMind/NeoSolarized'
 call plug#end()
-"--------------"}}}
-
+"}}}
 " " plugin options " {{{
 "----------------------"
 if has('nvim')
@@ -57,8 +56,7 @@ let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme termschool
-"----------------------"}}}
-
+"}}}
 " " general settings " {{{
 "------------------------"
 filetype plugin on
@@ -84,8 +82,7 @@ set ignorecase
 set smartcase
 set clipboard+=unnamedplus
 set termguicolors
-"------------------------"}}}
-
+"}}}
 " " key bindings " {{{
 "--------------------"
 
@@ -120,8 +117,7 @@ map <S-M-l> <C-w><S-l>
 
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
-"--------------------"}}}
-
+"}}}
 " " functions " {{{
 "-----------------"
 " writes the file and uploads it to hastebin.com
@@ -135,8 +131,7 @@ func! HasteUpload()
         exec "!haste % | tee >(xsel -ib)"
     endif
 endfunc
-"-----------------"}}}
-
+"}}}
 " " skeletons " {{{
 "-----------------"
 au! BufNewFile *.html  0r ~/.vim/skeleton/skeleton.html
