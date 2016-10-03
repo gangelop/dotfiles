@@ -117,6 +117,12 @@ map <S-M-l> <C-w><S-l>
 
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
+
+map <leader>x : Xsos<CR>
+command! Xsos call Xsos()
+func! Xsos()
+    exec "tabnew term://xsos\\ -a\\ ."
+endfunc
 "}}}
 " " functions " {{{
 "-----------------"
