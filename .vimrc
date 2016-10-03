@@ -118,11 +118,8 @@ map <S-M-l> <C-w><S-l>
 " Toggle relativenumber
 map <leader>r : set relativenumber!<CR>
 
+" run xsos on current directory
 map <leader>x : Xsos<CR>
-command! Xsos call Xsos()
-func! Xsos()
-    exec "tabnew term://xsos\\ -a\\ ."
-endfunc
 "}}}
 " " functions " {{{
 "-----------------"
@@ -136,6 +133,11 @@ func! HasteUpload()
     else
         exec "!haste % | tee >(xsel -ib)"
     endif
+endfunc
+
+command! Xsos call Xsos()
+func! Xsos()
+    exec "tabnew term://xsos\\ -a\\ ."
 endfunc
 "}}}
 " " skeletons " {{{
