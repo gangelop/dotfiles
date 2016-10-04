@@ -19,7 +19,7 @@ Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sierra'
 Plug 'nanotech/jellybeans.vim'
 Plug 'whatyouhide/vim-gotham'
-Plug 'marcopaganini/termschool-vim-theme', { 'frozen': 1 }
+Plug 'marcopaganini/termschool-vim-theme'
 Plug 'iCyMind/NeoSolarized'
 call plug#end()
 "}}}
