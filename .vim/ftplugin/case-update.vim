@@ -40,7 +40,6 @@ ia <buffer> sig Kind regards,<CR>George Angelopoulos<CR>Technical Support Engine
 ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
 ia <buffer> soclink Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
 "}}}
-
 " "miscellaneous" {{{
 "-------------------"
 
