@@ -1,14 +1,7 @@
-map <buffer> <F3> : call RunPython2()<CR>
-map <buffer> <F4> : call RunPython3()<CR>
+map <buffer> <F4> : call RunScript()<CR>
 
-func! RunPython2()
+func! RunScript()
     exec "w"
-    exec "vsplit term://python2\\ %"
-    exec "startinsert"
-endfunc
-
-func! RunPython3()
-    exec "w"
-    exec "vsplit term://python3\\ %"
+    exec "vsplit term://./%"
     exec "startinsert"
 endfunc

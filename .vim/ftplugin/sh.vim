@@ -1,9 +1,9 @@
-map <buffer> <F4> : call RunBash()<CR>
+map <buffer> <F4> : call RunScript()<CR>
 map <buffer> <F3> : call RunShellcheck()<CR>
 
-func! RunBash()
+func! RunScript()
     exec "w"
-    exec "vsplit term://bash\\ %"
+    exec "vsplit term://./%"
     exec "startinsert"
 endfunc
 
