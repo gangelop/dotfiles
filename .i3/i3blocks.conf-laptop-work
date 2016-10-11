@@ -29,15 +29,15 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-[mem_avail]
-command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
-interval=5
-
 [bitcoin]
 label= 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 color=#8080ff
 interval=10
+
+[mem_avail]
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
+interval=5
 
 [disk]
 label= 
