@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-# TODO: check return code of qdbus ( is clementine running? )
+# TODO:
+# - check return code of qdbus ( is clementine running? )
+# - don't output song when stopped.
 
 qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk '
 /artist: / {
