@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+# TODO: check return code of qdbus ( is clementine running? )
+
+qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk '
+/artist: / {
+    gsub("artist: ","")
+    printf $0
+    printf " - "
+}
+/title: / {
+    gsub("title: ","")
+    printf $0
+    printf "\n"
+}
+'
