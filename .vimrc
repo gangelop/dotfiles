@@ -21,6 +21,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme'
 Plug 'iCyMind/NeoSolarized'
+Plug 'alessandroyorba/despacio'
 call plug#end()
 "}}}
 " " plugin options " {{{
