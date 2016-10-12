@@ -12,22 +12,24 @@
 # stopped:
 # [Argument: (iiii) 2, 0, 0, 0]
 
-status=$(qdbus --literal org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetStatus | awk '{ gsub(",","",$3); print $3}')
+status=$(qdbus --literal org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetStatus 2>/dev/null | awk '{ gsub(",","",$3); print $3}')
+[ -z "$status" ] && exit 15
 
-# if playing, else
-if [ "$status" -eq 0 ]; then
-    qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk '
-    /artist: / {
-        gsub("artist: ","")
-        printf $0
-        printf " - "
-    }
-    /title: / {
-        gsub("title: ","")
-        printf $0
-        printf "\n"
-    }
-    '
-else
-    exit 1
-fi
+qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk -v status="$status" '
+BEGIN {
+    if ( status == 1 ) printf "[PAUSED] "
+    else if ( status == 2 ) { print "[STOPPED]"; exit 2 }
+    else if ( status != 0 ) exit 14     # we should never reach this
+}
+
+/artist: / {
+    gsub("artist: ","")
+    printf $0
+    printf " - "
+}
+/title: / {
+    gsub("title: ","")
+    printf $0
+    printf "\n"
+}
+'
