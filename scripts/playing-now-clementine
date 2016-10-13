@@ -3,8 +3,8 @@
 # TODO:
 # - check return code of qdbus ( is clementine running? )
 
-# MAGIC!
-# sample output of qdbus when track is
+# Sample output of GetStatus when track is
+# ----------------------------------------
 # playing:
 # [Argument: (iiii) 0, 0, 0, 0]
 # paused:
@@ -12,24 +12,45 @@
 # stopped:
 # [Argument: (iiii) 2, 0, 0, 0]
 
-status=$(qdbus --literal org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetStatus 2>/dev/null | awk '{ gsub(",","",$3); print $3}')
+status=$(qdbus --literal \
+    org.mpris.clementine \
+    /Player org.freedesktop.MediaPlayer.GetStatus \
+    2>/dev/null | awk '{ gsub(",","",$3); print $3}')
 [ -z "$status" ] && exit 15
 
-qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk -v status="$status" '
-BEGIN {
-    if ( status == 1 ) printf "[PAUSED] "
-    else if ( status == 2 ) { print "[STOPPED]"; exit 2 }
-    else if ( status != 0 ) exit 14     # we should never reach this
-}
 
+# Sample output of GetMetadata:
+# -----------------------------
+# album: Polymorphic Code
+# artist: THE ALGORITHM
+# arturl: file:///tmp/clementine-art-Rh5124.jpg
+# audio-bitrate: 919
+# audio-samplerate: 44100
+# bpm: -1
+# comment: Visit http://basickrecords.bandcamp.com
+# location: file:///home/george/music/The Algorithm/Polymorphic Code/Basick Records - Polymorphic Code - 06 Warp Gate Exploit.flac
+# mtime: 347000
+# time: 347
+# title: Warp Gate Exploit
+# tracknumber: 6
+# year: 2012
+
+qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata | awk -v status="$status" '
 /artist: / {
-    gsub("artist: ","")
-    printf $0
-    printf " - "
+    gsub("artist: ", "")
+    art = $0
 }
 /title: / {
-    gsub("title: ","")
-    printf $0
-    printf "\n"
+    gsub("title: ", "")
+    sng = $0
+}
+
+END {
+    if ( status == 1 ) pre = "[PAUSED] "
+    else if ( status == 2 ) { print "[STOPPED]"; exit 2 }
+    else if ( status != 0 ) { pirint "OOPS!"; exit 99 } # we should never reach this
+
+    print pre art,"-",sng
+    print sng
 }
 '
