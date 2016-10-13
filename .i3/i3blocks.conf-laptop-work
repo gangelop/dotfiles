@@ -35,8 +35,8 @@ command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 color=#8080ff
 interval=10
 
-[mem_avail]
-command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
+[memory]
+command=/home/george/git/i3blocks/scripts/$BLOCK_NAME
 interval=5
 
 [disk]
