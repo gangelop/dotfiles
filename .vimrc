@@ -56,7 +56,7 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
-colorscheme termschool
+colorscheme alduin
 "}}}
 " " general settings " {{{
 "------------------------"
