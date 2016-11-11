@@ -1,2 +1,5 @@
 #!/bin/bash
-for f in /sys/kernel/mm/ksm/*; do printf "%s: " "$(basename "$f")"; cat "$f"; done | column -t
+for f in /sys/kernel/mm/ksm/*; do
+    printf "%s: " "$(basename "$f")"
+    cat "$f"
+done | column -t
