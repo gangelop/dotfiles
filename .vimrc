@@ -83,6 +83,11 @@ set ignorecase
 set smartcase
 set clipboard+=unnamedplus
 set termguicolors
+
+" upcoming neovim feature
+if exists('&inccommand')
+  set inccommand=split
+endif
 "}}}
 " " key bindings " {{{
 "--------------------"
