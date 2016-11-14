@@ -51,3 +51,4 @@ unset zsh_syntax_hi
 
 # fuzy finder!
 . /usr/share/fzf/key-bindings.zsh
+. /usr/share/fzf/completion.zsh
