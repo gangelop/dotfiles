@@ -48,6 +48,7 @@ let g:startify_custom_header = g:ascii
 
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = "rw"
+let g:ctrlp_follow_symlinks = 2
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
