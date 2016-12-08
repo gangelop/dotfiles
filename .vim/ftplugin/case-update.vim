@@ -15,6 +15,7 @@ ia <buffer> sc support case
 " opening phrases "
 ia <buffer> hi Hello,<CR><CR>Thank you for contacting Red Hat Support. My name is George Angelopoulos and I have taken ownership of this case.
 ia <buffer> hifts Hello,<CR><CR>My name is George Angelopoulos. I am an engineer in the EMEA team and I will be assisting you with this support case as part of the 24x7 workflow.
+ia <buffer> hichown Hello,<CR><CR>My name is George Angelopoulos. I am an engineer in the European team and I have taken ownership of this support case.
 
 ia <buffer> plswait Please allow me some time to look into the sosreport data and I will update you.
 
