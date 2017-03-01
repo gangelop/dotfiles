@@ -13,6 +13,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'vim-scripts/Cleanroom'
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
