@@ -3,4 +3,4 @@
 # cat all files supplied in the command line
 # but remove comments and blank lines.
 
-cat "$@" | awk '!/^#|^$/'
+cat "$@" | awk '!/^\s*#|^$/'
