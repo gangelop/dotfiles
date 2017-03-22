@@ -23,6 +23,7 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme'
 Plug 'iCyMind/NeoSolarized'
 Plug 'alessandroyorba/despacio'
+Plug 'sherifkandeel/vim-colors' "name: vimbrains
 call plug#end()
 "}}}
 " " plugin options " {{{
