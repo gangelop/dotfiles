@@ -265,7 +265,7 @@ bindsym $mod+p      exec "passmenu -fn 'inconsolata-10'"
 exec --no-startup-id "bash ~/.fehbg"
 
 # start compton compositor
-exec --no-startup-id "compton --config ~/.config/compton.conf -b"
+exec_always --no-startup-id "compton --config ~/.config/compton.conf"
 
 # start notification daemon
 exec --no-startup-id "dunst"
