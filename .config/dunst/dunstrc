@@ -119,7 +119,7 @@
     startup_notification = false
 
     # dmenu path
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/dmenu -i -fn "inconsolata-10" -p dunst:
 
     # browser for opening urls in context menu
     browser = /usr/bin/firefox -new-tab
