@@ -22,6 +22,10 @@
     # Markup is allowed
     format = "<b>%s</b>\n%b"
 
+    icon_position = left
+    max_icon_size = 32
+    icon_folders = "/usr/share/icons/gnome/24x24/status/:/usr/share/icons/gnome/24x24/devices/:/usr/share/icons/gnome/24x24/apps/:/usr/share/icons/Faenza/apps/32/:/usr/share/icons/hicolor/24x24/apps/"
+
     # Sort messages by urgency
     sort = yes
 
