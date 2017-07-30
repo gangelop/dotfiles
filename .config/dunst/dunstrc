@@ -10,7 +10,7 @@
     #
     # for a complete reference see http://developer.gnome.org/pango/stable/PangoMarkupFormat.html
     # If markup is not allowed, those tags will be stripped out of the message.
-    allow_markup = yes
+    markup = full
 
     # The format of the message. Possible variables are:
     #   %a  appname
@@ -124,9 +124,8 @@
     # browser for opening urls in context menu
     browser = /usr/bin/firefox -new-tab
 
-[frame]
-    width = 0
-    color = "#222222"
+    frame_width = 0
+    frame_color = "#222222"
 
 [shortcuts]
     # shortcuts are specified as [modifier+][modifier+]...key
