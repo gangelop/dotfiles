@@ -1,4 +1,3 @@
-# <- this tricks vim into using syntax highlighting
 [global]
     font = Ubuntu 8
 
@@ -227,3 +226,4 @@
 #    summary = *twitter.com*
 #    urgency = normal
 #
+# vim: set ft=config:
