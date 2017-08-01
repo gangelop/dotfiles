@@ -190,6 +190,10 @@
     appname = "Clementine"
     new_icon    = clementine
 
+[transmission]
+    appname = "transmission"
+    new_icon = transmission
+
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh
