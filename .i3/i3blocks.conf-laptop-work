@@ -29,11 +29,18 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-[bitcoin]
+[hitbtc-ticker]
 label= 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 color=#8080ff
 interval=10
+
+[hitbtc-ticker]
+label=XMR
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME XMRUSD
+color=#ff6600
+interval=10
+
 
 [memory]
 command=/home/george/git/i3blocks/scripts/$BLOCK_NAME
