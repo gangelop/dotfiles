@@ -14,6 +14,7 @@ Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
+Plug 'nvie/vim-flake8'
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
