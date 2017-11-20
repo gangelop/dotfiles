@@ -40,6 +40,7 @@ ia <buffer> sig Kind regards,<CR>George Angelopoulos<CR>Technical Support Engine
 " useful links "
 ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
 ia <buffer> soclink Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
+ia <buffer> ftplink How to provide files to Red Hat Support<CR>https://access.redhat.com/solutions/2112
 "}}}
 " "miscellaneous" {{{
 "-------------------"
