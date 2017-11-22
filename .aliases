@@ -1,7 +1,7 @@
 alias xclip="xclip -selection c"
 alias rdesktop='rdesktop -g 1024x768'
 alias vboxmanage='VBoxManage'
-alias lt='ls -lth --color=auto'
+alias lt='ls -lrth --color=auto'
 alias digq='dig +nostats +nocomments +nocmd +noquestion'
 alias cal='cal -3'
 alias pgrep='pgrep -a'
@@ -14,6 +14,5 @@ alias ips6='ip -6 -o a | awk '\''{ print $2"\t"$4 }'\'
 alias ips='ips4'
 alias wtr="curl http://wttr.in/brno"
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
-alias latest="lt | head"
 alias xxd="xxd -g1"
 alias d="docker"
