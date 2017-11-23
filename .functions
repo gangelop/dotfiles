@@ -1,5 +1,5 @@
 # change the password store directory
-function passdir {
+passdir() {
     if [[ -n "$1" ]]; then
         export PASSWORD_STORE_DIR="$(cd "$1"; pwd -P)"
     else
@@ -7,6 +7,12 @@ function passdir {
     fi
 }
 
-function vimdiffhex {
+vimdiffhex() {
     nvim -d <(xxd -a "$1") <(xxd -a "$2")
 }
+
+uncom() {
+    cat "$@" | awk '!/^\s*#|^$/'
+}
+
+# vim:ft=zsh
