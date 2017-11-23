@@ -15,4 +15,11 @@ uncom() {
     cat "$@" | awk '!/^\s*#|^$/'
 }
 
+soxy() {
+    track_path="$1"
+    track=${track_path##*/}
+
+    sox --show-progress "$track_path" -n spectrogram -o "$PWD"/"$track".png
+}
+
 # vim:ft=zsh
