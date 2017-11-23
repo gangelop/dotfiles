@@ -16,6 +16,7 @@ uncom() {
 }
 
 soxy() {
+    [[ -n "$1" ]] || return 2
     track_path="$1"
     track=${track_path##*/}
 
