@@ -23,7 +23,7 @@
 
     icon_position = left
     max_icon_size = 32
-    icon_folders = "/usr/share/icons/gnome/24x24/status/:/usr/share/icons/gnome/24x24/devices/:/usr/share/icons/gnome/24x24/apps/:/usr/share/icons/Faenza/apps/32/:/usr/share/icons/hicolor/24x24/apps/:/usr/share/icons/Arc/apps/24/:/usr/share/icons/hicolor/32x32/apps/"
+    icon_path = "/usr/share/icons/gnome/24x24/status/:/usr/share/icons/gnome/24x24/devices/:/usr/share/icons/gnome/24x24/apps/:/usr/share/icons/Faenza/apps/32/:/usr/share/icons/hicolor/24x24/apps/:/usr/share/icons/Arc/apps/24/:/usr/share/icons/hicolor/32x32/apps/"
 
     # Sort messages by urgency
     sort = yes
