@@ -47,7 +47,8 @@ command=/home/george/git/i3blocks/scripts/$BLOCK_NAME
 interval=5
 
 [disk]
-label= 
+#label= 
+label=disk
 interval=30
 
 [iface]
@@ -56,19 +57,22 @@ interval=10
 separator=false
 
 [wifi]
-label=
+#label=
+label=wifi
 markup=pango
 instance=wlp3s0
 interval=10
 
 [load_average]
-label=
+#label=
+label=load
 interval=5
 
 [batterybar]
 command=/home/george/git/i3blocks-contrib/batterybar/$BLOCK_NAME -f '#aaaaaa'
 interval=5
-label=
+#label=
+#label=battery
 markup=pango
 min_width= ■■■■■
 

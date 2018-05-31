@@ -169,7 +169,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 
-set $mode-resize " resize"
+#set $mode-resize " resize"
+set $mode-resize "resize"
 bindsym $mod+r mode $mode-resize
 mode $mode-resize {
         # These bindings trigger as soon as you enter the resize mode
@@ -194,7 +195,8 @@ mode $mode-resize {
         bindsym Escape mode "default"
 }
 
-set $mode-brightness " brightness"
+#set $mode-brightness " brightness"
+set $mode-brightness "brightness"
 bindsym $mod+b mode $mode-brightness
 mode $mode-brightness {
     bindsym k exec "xbacklight -inc 5"
@@ -215,7 +217,8 @@ mode $mode-brightness {
     bindsym Escape mode "default"
 }
 
-set $mode-poweroff " : [p]oweroff [r]eboot [l]ogout"
+#set $mode-poweroff " : [p]oweroff [r]eboot [l]ogout"
+set $mode-poweroff "[p]oweroff [r]eboot [l]ogout"
 bindsym $mod+Shift+x mode $mode-poweroff
 mode $mode-poweroff {
     bindsym p exec "poweroff"
