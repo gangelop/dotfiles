@@ -42,7 +42,8 @@ color=#ff6600
 interval=10
 
 [disk]
-label= 
+#label= 
+label=disk 
 interval=30
 
 [iface]
@@ -51,7 +52,8 @@ interval=10
 separator=false
 
 [load_average]
-label=
+#label=
+label=load
 interval=5
 
 [timedate]
