@@ -38,9 +38,10 @@ ia <buffer> cheers Cheers,<CR>George
 ia <buffer> sig Kind regards,<CR>George Angelopoulos<CR>Technical Support Engineer - Red Hat
 
 " useful links "
-ia <buffer> sevlink Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
-ia <buffer> soclink Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
-ia <buffer> ftplink How to provide files to Red Hat Support<CR>https://access.redhat.com/solutions/2112
+ia <buffer> lsev Red Hat Support Severity Level Definitions<CR>https://access.redhat.com/support/policy/severity
+ia <buffer> lsoc Production Support Scope of Coverage<CR>https://access.redhat.com/support/offerings/production/soc
+ia <buffer> lftp How to provide files to Red Hat Support<CR>https://access.redhat.com/solutions/2112
+ia <buffer> lsos How to generate sosreport from the rescue environment<CR>https://access.redhat.com/solutions/2872<CR>
 "}}}
 " "miscellaneous" {{{
 "-------------------"
