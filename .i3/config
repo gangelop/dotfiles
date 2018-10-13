@@ -128,9 +128,6 @@ bindsym $mod+c move workspace to output right
 
 # Assign specific applications to workspaces
 assign [class="^Skype$"] $ws2
-assign [class="^Pidgin$"] $ws2
-assign [class="^HipChat$"] $ws2
-assign [class="^Hexchat$"] $ws2
 assign [class="^Firefox$"] $ws3
 assign [class="^Clementine$"] $ws9
 assign [class="^Thunderbird$"] $ws4
@@ -257,13 +254,13 @@ client.urgent           #ffff00 #ffff00 #000000 #ffff00
 # general keyboard shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/pictures/scrot/'"
 bindsym $mod+mod1+t exec "nautilus"
-bindsym $mod+mod1+p exec "pidgin"
 bindsym $mod+mod1+f exec "firefox"
 bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
 bindsym $mod+p      exec "passmenu -fn 'inconsolata-10'"
+bindcode $mod+34    exec "PASSWORD_STORE_DIR=~/.pass1 passmenu -fn 'inconsolata-10'"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
