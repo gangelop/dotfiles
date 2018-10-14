@@ -51,10 +51,11 @@ interval=5
 label=disk
 interval=30
 
-[iface]
+[external-ip]
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
+label=ip
 color=#00FF00
 interval=10
-separator=false
 
 [wifi]
 #label=
