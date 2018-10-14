@@ -65,5 +65,5 @@ markup=pango
 min_width= ■■■■■
 
 [timedate]
-command=date '+ %a, %b %d %Y ⏲ %H:%M:%S'
+command=date '+%a, %b %d %Y %H:%M:%S'
 interval=1
