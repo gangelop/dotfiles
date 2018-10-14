@@ -259,8 +259,7 @@ bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
-bindsym $mod+p      exec "passmenu -fn 'inconsolata-10'"
-bindcode $mod+34    exec "PASSWORD_STORE_DIR=~/.pass1 passmenu -fn 'inconsolata-10'"
+bindsym $mod+p      exec "rofi-pass"
 
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
