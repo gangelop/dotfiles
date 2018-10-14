@@ -57,5 +57,5 @@ label=load
 interval=5
 
 [timedate]
-command=date '+ %a, %b %d %Y   %H:%M:%S'
+command=date '+ %a, %b %d %Y ⏲ %H:%M:%S'
 interval=1
