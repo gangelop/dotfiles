@@ -88,6 +88,7 @@ set smartcase
 set clipboard+=unnamedplus
 set termguicolors
 set inccommand=split
+"set virtualedit=all
 
 "}}}
 " " key bindings " {{{
