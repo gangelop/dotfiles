@@ -128,7 +128,7 @@ bindsym $mod+c move workspace to output right
 
 # Assign specific applications to workspaces
 assign [class="^Skype$"] $ws2
-assign [class="^Firefox$"] $ws3
+assign [class="^firefox$"] $ws3
 assign [class="^Clementine$"] $ws9
 assign [class="^Thunderbird$"] $ws4
 
@@ -141,7 +141,8 @@ hide_edge_borders both
 # This is for the clipqr.sh script which generates a QR code from clipboard.
 for_window [title="clipqr"] floating enable
 for_window [title="pinentry"] floating enable
-for_window [class="^Firefox$"] border pixel 0
+for_window [class="^firefox$"] border pixel 0
+for_window [class="^Blender$"] border pixel 0
 
 # this works for Firefox and probably other programs too
 #for_window [instance="^Download"] floating enable
@@ -264,8 +265,8 @@ bindsym $mod+p      exec "rofi-pass"
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
 
-# start compton compositor
-exec --no-startup-id "compton --config ~/.config/compton.conf"
+# start picom compositor
+exec --no-startup-id "picom --config ~/.config/compton.conf"
 
 # start notification daemon
 exec --no-startup-id "dunst"
