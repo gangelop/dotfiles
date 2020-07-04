@@ -15,10 +15,14 @@ Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
 Plug 'nvie/vim-flake8'
+Plug 'fatih/vim-go'
+"Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sierra'
+Plug 'AlessandroYorba/Arcadia'
+Plug 'AlessandroYorba/Breve'
 Plug 'nanotech/jellybeans.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'marcopaganini/termschool-vim-theme'
