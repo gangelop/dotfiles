@@ -94,6 +94,13 @@ set termguicolors
 set inccommand=split
 "set virtualedit=all
 
+" netrw settings
+let g:netrw_winsize = -28
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_altv = 0
+
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 "}}}
@@ -101,6 +108,7 @@ let g:go_info_mode='gopls'
 "--------------------"
 " Toggles NERDTree
 map <leader>t : NERDTreeToggle<CR>
+"map <leader>t : Lexplore<CR>
 
 " Toggles TagBar
 map <leader>b : TagbarToggle<CR>
