@@ -15,7 +15,7 @@ Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
 Plug 'nvie/vim-flake8'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
 "Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
@@ -94,6 +94,8 @@ set termguicolors
 set inccommand=split
 "set virtualedit=all
 
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 "}}}
 " " key bindings " {{{
 "--------------------"
