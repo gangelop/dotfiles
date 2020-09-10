@@ -129,6 +129,7 @@ bindsym $mod+c move workspace to output right
 # Assign specific applications to workspaces
 assign [class="^Skype$"] $ws2
 assign [class="^firefox$"] $ws3
+assign [class="^Brave-browser$"] $ws3
 assign [class="^Clementine$"] $ws9
 assign [class="^Thunderbird$"] $ws4
 
@@ -142,6 +143,7 @@ hide_edge_borders both
 for_window [title="clipqr"] floating enable
 for_window [title="pinentry"] floating enable
 for_window [class="^firefox$"] border pixel 0
+for_window [class="^Brave-browser$"] border pixel 0
 for_window [class="^Blender$"] border pixel 0
 
 # this works for Firefox and probably other programs too
@@ -255,6 +257,7 @@ client.urgent           #ffff00 #ffff00 #000000 #ffff00
 # general keyboard shortcuts
 bindsym Print exec "scrot $Y-%m-%d-%s_$wx$h.png -e 'mv $f ~/pictures/scrot/'"
 bindsym $mod+mod1+t exec "nautilus"
+bindsym $mod+mod1+r exec "brave"
 bindsym $mod+mod1+f exec "firefox"
 bindsym $mod+mod1+c exec "chromium"
 bindsym $mod+m      exec "clementine -o"
