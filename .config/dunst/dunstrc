@@ -185,14 +185,6 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order to find
 # fitting options for rules.
 
-[clementine]
-    appname = "Clementine"
-    new_icon    = clementine
-
-[transmission]
-    appname = "transmission"
-    new_icon = transmission
-
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh
