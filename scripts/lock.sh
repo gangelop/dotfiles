@@ -10,7 +10,7 @@
 tmpbg="$(mktemp /tmp/lock.sh-XXXXXXXXXX.png)"
 #icon="/home/george/lock_icon.png"
 scrot -o $tmpbg
-convert $tmpbg -scale 10% -scale 1000% -fill black -colorize 25% $tmpbg
+gm convert $tmpbg -scale 10% -scale 1000% -fill black -colorize 25% $tmpbg
 #[[ -f $icon ]] && convert $tmpbg $icon -gravity center -composite -matte $tmpbg
 #dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
 
