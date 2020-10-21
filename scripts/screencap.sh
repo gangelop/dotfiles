@@ -2,7 +2,7 @@
 # based on a script by unixmaniac
 # https://unixmaniac.com/howto-record-4k-gameplay-on-linux/
 
-capturedir="/storage/videocapture/"
+capturedir="/storage/screencap/"
 if [ "$1" = "" ]; then
     sessiondir="${capturedir}/$(date +%s)"
 else
