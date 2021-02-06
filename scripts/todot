@@ -4,5 +4,6 @@ dotdir="$HOME/dotfiles"
 
 for i in "$@"; do
     dotfile="$(realpath "$i")"
-    install -D "$i" "$dotdir/${dotfile/$HOME}"
+    [ -x "$dotfile" ] || notexecutable="-m644"
+    install -D $notexecutable "$i" "$dotdir/${dotfile/$HOME}"
 done
