@@ -144,7 +144,7 @@ hide_edge_borders both
 
 # Always float windows with title 'clipqr'.
 # This is for the clipqr.sh script which generates a QR code from clipboard.
-for_window [title="clipqr"] floating enable
+for_window [title="^clipqr$"] floating enable
 for_window [title="pinentry"] floating enable
 for_window [class="^firefox$"] border pixel 0
 for_window [class="^Brave-browser$"] border pixel 0
