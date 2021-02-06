@@ -3,6 +3,6 @@
 dotdir="$HOME/dotfiles"
 
 for i in "$@"; do
-    [ -f "$i" ] && dotfile="$(realpath "$i")"
+    dotfile="$(realpath "$i")"
     install -D "$i" "$dotdir/${dotfile/$HOME}"
 done
