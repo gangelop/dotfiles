@@ -11,12 +11,21 @@ The `configure` script is meant to work with **zsh only**.
 
 clone the repo:
 ```bash
-git clone https://github.com/lathan/dotfiles.git
+cd
+git clone https://github.com/gangelop/dotfiles.git
 ```
 To install the dotfiles and **OVERWRITE** those in your home directory run:
 ```bash
 source dotfiles/configure
 ```
+
+When I make a change to a dotfile, I use the `todot` script to quicky copy it to the right location within the dotfile repo.  
+Example:
+```bash
+todot .i3/config .config/compton.conf
+```
+
+Then it's ready to be commited to git.
 
 ## Extra stuff, not in the public repo.
 
