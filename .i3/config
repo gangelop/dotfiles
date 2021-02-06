@@ -149,6 +149,7 @@ for_window [title="pinentry"] floating enable
 for_window [class="^firefox$"] border pixel 0
 for_window [class="^Brave-browser$"] border pixel 0
 for_window [class="^Blender$"] border pixel 0
+for_window [class="^Pixeluvo$"] border pixel 0
 
 # this works for Firefox and probably other programs too
 #for_window [instance="^Download"] floating enable
