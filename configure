@@ -18,7 +18,8 @@ fi
 rsync --exclude ".git" \
       --exclude "$SCRIPTNAME" \
       --exclude "README.md" \
-      --exclude "UNLICENSE.md" \
+      --exclude "LICENSE.md" \
+      --exclude "rice.png" \
       --exclude "*.swp" \
       -av --no-perms . ~
 
