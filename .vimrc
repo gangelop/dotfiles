@@ -92,6 +92,7 @@ set smartcase
 set clipboard+=unnamedplus
 set termguicolors
 set inccommand=split
+set updatetime=100
 "set virtualedit=all
 
 " netrw settings
