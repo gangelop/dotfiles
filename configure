@@ -7,9 +7,9 @@ OLD_CONFIG="$(md5sum $SCRIPTNAME)"
 git pull origin master
 NEW_CONFIG="$(md5sum $SCRIPTNAME)"
 
-# if we pulled a new configure file, source that one and exit.
+# if we pulled a new configure script, source that one and exit.
 if [ ! $OLD_CONFIG = $NEW_CONFIG ]; then
-    echo "The $SCRIPTNAME file has been updated. It will now run again."
+    echo "The $SCRIPTNAME script has been updated. It will now run again."
     cd $OLDPWD
     source $0
     return 0
