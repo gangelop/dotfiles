@@ -57,9 +57,6 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = "rw"
 let g:ctrlp_follow_symlinks = 2
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
 let g:airline_powerline_fonts=1
 let g:airline_theme='zenburn'
 
