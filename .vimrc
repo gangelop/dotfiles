@@ -16,6 +16,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
 Plug 'nvie/vim-flake8'
 Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
+Plug 'cespare/vim-toml'
 "Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
