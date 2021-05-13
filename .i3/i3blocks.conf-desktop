@@ -30,15 +30,21 @@ separator_block_width=15
 markup=none
 
 [kraken-ticker]
-label= 
+label=XBTUSD 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 color=#8080ff
 interval=10
 
 [kraken-ticker]
-label=XMR 
-command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME XMRUSD
+label=XMRUSD 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME XXMRZUSD
 color=#ff6600
+interval=10
+
+[kraken-ticker]
+label=DOTUSD 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME DOTUSD DOTUSD
+color=#E6007A
 interval=10
 
 [disk]
