@@ -16,6 +16,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
 Plug 'nvie/vim-flake8'
 Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
+Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 "Plug 'edkolev/tmuxline.vim'
 
@@ -63,6 +64,8 @@ let g:airline_theme='zenburn'
 
 let g:alduin_Shout_Aura_Whisper = 1
 colorscheme alduin
+
+let g:rustfmt_autosave = 1
 "}}}
 " " general settings " {{{
 "------------------------"
