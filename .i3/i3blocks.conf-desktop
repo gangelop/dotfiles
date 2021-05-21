@@ -30,21 +30,32 @@ separator_block_width=15
 markup=none
 
 [kraken-ticker]
-label=XBTUSD 
+label=BTC 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 color=#8080ff
 interval=10
 
 [kraken-ticker]
-label=XMRUSD 
+label=XMR 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME XXMRZUSD
 color=#ff6600
 interval=10
 
 [kraken-ticker]
-label=DOTUSD 
-command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME DOTUSD DOTUSD
+label=DOT 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME DOTUSD
 color=#E6007A
+interval=10
+
+[kraken-ticker]
+label=KSM 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME KSMUSD
+color=#E6007A
+interval=10
+
+[kraken-ticker]
+label=ADA 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME ADAUSD
 interval=10
 
 [disk]
