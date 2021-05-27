@@ -18,6 +18,7 @@ Plug 'nvie/vim-flake8'
 Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
+Plug 'Glench/Vim-Jinja2-Syntax'
 "Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
