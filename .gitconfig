@@ -8,6 +8,7 @@
     ll = log --graph --decorate --stat
     ld = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\"
     st = status --short --branch
+    la = log --graph --oneline --all
 [push]
     default = simple
 [color]
