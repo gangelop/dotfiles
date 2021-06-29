@@ -10,7 +10,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
@@ -36,26 +35,6 @@ call plug#end()
 "}}}
 " " plugin options " {{{
 "----------------------"
-if has('nvim')
-let g:ascii = [
-      \ '                        __',
-      \ '    ___  ___ ___.--.--.|__|.--------.',
-      \ '   / _ \/ -_) _ |  |  ||  ||        |',
-      \ '  /_//_/\__/\___/\___/ |__||__|__|__|',
-      \ ''
-      \]
-else
-let g:ascii = [
-      \ '          __',
-      \ '  .--.--.|__|.--------.',
-      \ '  |  |  ||  ||        |',
-      \ '   \___/ |__||__|__|__|',
-      \ ''
-      \]
-endif
-
-let g:startify_custom_header = g:ascii
-
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = "rw"
 let g:ctrlp_follow_symlinks = 2
