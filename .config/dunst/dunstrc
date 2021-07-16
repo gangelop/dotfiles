@@ -122,10 +122,10 @@
     startup_notification = false
 
     # dmenu path
-    dmenu = /usr/bin/dmenu -i -fn "inconsolata-10" -p dunst:
+    dmenu = rofi -dmenu -i
 
     # browser for opening urls in context menu
-    browser = /usr/bin/firefox -new-tab
+    browser = xdg-open
 
     frame_width = 0
     frame_color = "#00000000"
