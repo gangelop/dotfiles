@@ -1,0 +1,6 @@
+configuration {
+    show-icons: true;
+    font: "inconsolata 10";
+    combi-modi: "window,drun";
+}
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
