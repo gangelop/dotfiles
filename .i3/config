@@ -266,6 +266,12 @@ bindsym $mod+z      exec "pavucontrol"
 bindsym $mod+p      exec "rofi-pass"
 bindsym $mod+Shift+e exec "~/scripts/rofi-emoji.sh"
 
+# dunst key bindings
+bindsym ctrl+space          exec "dunstctl close"
+bindsym ctrl+shift+space    exec "dunstctl close-all"
+bindsym ctrl+grave          exec "dunstctl history-pop"
+bindsym ctrl+shift+.        exec "dunstctl context"
+
 # background wallpaper
 exec --no-startup-id "bash ~/.fehbg"
 
