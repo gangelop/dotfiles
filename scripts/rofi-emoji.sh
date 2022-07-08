@@ -22,13 +22,14 @@
 #       writing it to your clipboard.
 #     * Ctrl+C will copy it to your clipboard WITHOUT pasting it.
 #
+scriptname="$(basename "$0")"
 
 # Where to save the emojis file.
-EMOJI_FILE="$HOME/.cache/emojis.txt"
+emoji_file="$HOME/.cache/emojis.txt"
 
 # Urls of emoji to download.
 # You can remove what you don't need.
-URLS=(
+urls=(
     'https://emojipedia.org/people/'
     'https://emojipedia.org/nature/'
     'https://emojipedia.org/food-drink/'
@@ -39,20 +40,18 @@ URLS=(
     'https://emojipedia.org/flags/'
 )
 
-
 function notify() {
     if [ "$(command -v notify-send)" ]; then
         notify-send "$1" "$2"
     fi
 }
 
-
 function download() {
-    notify `basename "$0"` 'Downloading all emoji for your pleasure'
+    notify "$scriptname" 'Downloading all emoji for your pleasure'
 
-    echo "" > "$EMOJI_FILE"
+    echo "" > "$emoji_file"
 
-    for url in "${URLS[@]}"; do
+    for url in "${urls[@]}"; do
         echo "Downloading: $url"
 
         # Download the list of emoji and remove all the junk around it
@@ -67,16 +66,15 @@ function download() {
         emojis=$(echo "$emojis" | \
                  sed -rn 's/.*<span class="emoji">(.*)<\/span> (.*)<\/a><\/li>/\1 \2/p')
 
-        echo "$emojis" >> "$EMOJI_FILE"
+        echo "$emojis" >> "$emoji_file"
     done
 
-    notify `basename "$0"` "We're all set!"
+    notify "$scriptname" "We're all set!"
 }
 
-
 function display() {
-    emoji=$(cat "$EMOJI_FILE" | grep -v '#' | grep -v '^[[:space:]]*$')
-    line=$(echo "$emoji" | rofi -dmenu -i -p emoji -kb-custom-1 Ctrl+c $@)
+    emoji=$(grep -v '#' "$emoji_file" | grep -v '^[[:space:]]*$')
+    line=$(echo "$emoji" | rofi -dmenu -i -p emoji -kb-custom-1 Ctrl+c "$@")
     exit_code=$?
 
     line=($line)
@@ -89,9 +87,8 @@ function display() {
     fi
 }
 
-
 # Some simple argparsing
-if [[ "$1" =~ -D|--download ]]; then
+if [[ "$1" =~ -D|--download || ! -f "$emoji_file" ]]; then
     download
     exit 0
 elif [[ "$1" =~ -h|--help ]]; then
@@ -99,10 +96,5 @@ elif [[ "$1" =~ -h|--help ]]; then
     exit 0
 fi
 
-# Download all emoji if they don't exist yet
-if [ ! -f "$EMOJI_FILE" ]; then
-    download
-fi
-
 # display displays :)
-display
+display "$@"
