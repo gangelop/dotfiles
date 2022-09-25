@@ -136,7 +136,6 @@ assign [class="^Skype$"] $ws2
 assign [class="^firefox$"] $ws3
 assign [class="^Brave-browser$"] $ws3
 assign [class="^Clementine$"] $ws9
-assign [class="^Thunderbird$"] $ws4
 
 
 # Hides vertical and horizontal borders when there's only one window.
