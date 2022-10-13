@@ -57,7 +57,7 @@ function download() {
         # Download the list of emoji and remove all the junk around it
         emojis=$(curl -s "$url" | \
                  xmllint --html \
-                         --xpath '//ul[@class="emoji-list"]' - 2>/dev/null)
+                         --xpath '//ul[@class="emoji-list css_test1"]' - 2>/dev/null)
 
         # Get rid of starting/closing ul tags
         emojis=$(echo "$emojis" | head -n -1 | tail -n +1)
