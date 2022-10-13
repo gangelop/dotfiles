@@ -23,4 +23,10 @@ soxy() {
     sox --show-progress "$track_path" -n spectrogram -o "$PWD"/"$track".png
 }
 
+cdc() {
+    target="$HOME/cases/$1"
+
+    [ -d "$target" ] || mkdir "$target" && cd "$target"
+}
+
 # vim:ft=zsh
