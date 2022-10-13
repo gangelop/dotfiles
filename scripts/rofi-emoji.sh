@@ -77,7 +77,7 @@ function display() {
     line=$(echo "$emoji" | rofi -dmenu -i -p emoji -kb-custom-1 Ctrl+c "$@")
     exit_code=$?
 
-    line=($line)
+    IFS=" " read -r -a line <<< "$line"
 
     if [ $exit_code == 0 ]; then
         sleep 0.1  # Delay pasting so the text-entry can come active
