@@ -17,3 +17,4 @@ alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
 alias xxd="xxd -g1"
 alias d="docker"
 alias s=sudo
+alias gdb="gdb -q"
