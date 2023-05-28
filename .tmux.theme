@@ -19,3 +19,5 @@ set -g status-left "#[fg=#cccccc,bg=#444444,bold] #S #[fg=#444444,bg=#1c1c1c,nob
 set -g status-right "#[fg=#121212,bg=#1c1c1c,nobold,nounderscore,noitalics]#[fg=#444444,bg=#121212] %Y-%m-%d  %H:%M #[fg=#444444,bg=#121212,nobold,nounderscore,noitalics]#[fg=#cccccc,bg=#444444] #h "
 setw -g window-status-format "#[fg=#444444,bg=#1c1c1c] #I #[fg=#444444,bg=#1c1c1c] #W "
 setw -g window-status-current-format "#[fg=#1c1c1c,bg=#121212,nobold,nounderscore,noitalics]#[fg=#87875f,bg=#121212] #I #[fg=#87875f,bg=#121212] #W #[fg=#121212,bg=#1c1c1c,nobold,nounderscore,noitalics]"
+
+# vim:ft=tmux
