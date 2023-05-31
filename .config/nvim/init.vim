@@ -18,6 +18,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'jparise/vim-graphql'
 "Plug 'edkolev/tmuxline.vim'
 
 " colorschemes
