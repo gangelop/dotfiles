@@ -14,7 +14,7 @@ Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/Cleanroom'
 Plug 'nvie/vim-flake8'
-Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'Glench/Vim-Jinja2-Syntax'
