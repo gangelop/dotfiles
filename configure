@@ -1,22 +1,22 @@
 #!/bin/zsh
 
 cd `dirname $0`
-SCRIPTNAME=`basename $0`
+scriptname=`basename $0`
 
-OLD_CONFIG="$(md5sum $SCRIPTNAME)"
+oldconfig="$(md5sum $scriptname)"
 git pull origin master
-NEW_CONFIG="$(md5sum $SCRIPTNAME)"
+newconfig="$(md5sum $scriptname)"
 
 # if we pulled a new configure script, source that one and exit.
-if [ ! $OLD_CONFIG = $NEW_CONFIG ]; then
-    echo "The $SCRIPTNAME script has been updated. It will now run again."
-    cd $OLDPWD
+if [ ! $oldconfig = $newconfig ]; then
+    echo "The $scriptname script has been updated. It will now run again."
+    cd $oldpwd
     source $0
     return 0
 fi
 
 rsync --exclude ".git" \
-      --exclude "$SCRIPTNAME" \
+      --exclude "$scriptname" \
       --exclude "README.md" \
       --exclude "LICENSE.md" \
       --exclude "rice.png" \
@@ -25,4 +25,4 @@ rsync --exclude ".git" \
 
 source ~/.zshrc.local
 
-cd $OLDPWD
+cd $oldpwd
