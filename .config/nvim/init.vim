@@ -86,6 +86,8 @@ let g:netrw_altv = 0
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+let g:tar_cmd='bsdtar'
 "}}}
 " " key bindings " {{{
 "--------------------"
