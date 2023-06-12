@@ -1,4 +1,5 @@
 -- "packer" {{{
+-- https://github.com/wbthomason/packer.nvim
 -- install+update from AUR: nvim-packer-git
 require("packer").startup(function(use)
     use 'ctrlpvim/ctrlp.vim'
@@ -9,7 +10,6 @@ require("packer").startup(function(use)
     use 'majutsushi/tagbar'
     --Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     --Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-    --Plug 'vim-scripts/Cleanroom'
     --Plug 'nvie/vim-flake8'
     --"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
     --Plug 'rust-lang/rust.vim'
@@ -30,12 +30,12 @@ require("packer").startup(function(use)
     use 'alessandroyorba/despacio'
     use 'sherifkandeel/vim-colors' -- name: vimbrains
 end)
+
 --}}}
 -- "general settings" {{{
 vim.cmd.colorscheme("sierra")
 vim.o.background = "dark"
 
-vim.g.airline_theme='zenburn'
 vim.g.airline_powerline_fonts=1
 
 vim.o.autoindent = true
@@ -59,6 +59,7 @@ vim.o.inccommand = "split"
 vim.o.updatetime = 100
 
 vim.o.number = true
+
 -- }}}
 -- "keymaps" {{{
 vim.keymap.set('n', '<leader>b', ': TagbarToggle<cr>')
@@ -81,8 +82,33 @@ vim.keymap.set('n', '<S-M-l>', '<C-w><S-l>')
 
 -- Toggle relativenumber
 vim.keymap.set('n', '<leader>r', ': set relativenumber!<cr>')
+
 -- }}}
 -- "skeletons" {{{
---- hmmm 🤔
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.html",
+    command = "0r ~/.config/nvim/skeleton/skeleton.html| normal Gdd| 10G0",
+})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.sh",
+    command = "0r ~/.config/nvim/skeleton/skeleton.sh| normal G",
+})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.zsh",
+    command = "0r ~/.config/nvim/skeleton/skeleton.zsh| normal G",
+})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.c",
+    command = "0r ~/.config/nvim/skeleton/skeleton.c| normal Gddkk",
+})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.pl",
+    command = "0r ~/.config/nvim/skeleton/skeleton.pl| normal G",
+})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.py",
+    command = "0r ~/.config/nvim/skeleton/skeleton.py| normal G",
+})
+
 -- }}}
 -- vim:fdm=marker
