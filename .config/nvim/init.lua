@@ -18,12 +18,25 @@ require("packer").startup(function(use)
     --Plug 'jparise/vim-graphql'
     --Plug 'edkolev/tmuxline.vim'
 
-    use "AlessandroYorba/Sierra"
-    use "AlessandroYorba/Alduin"
+    -- colorschemes
+    use 'AlessandroYorba/Alduin'
+    use 'AlessandroYorba/Sierra'
+    use 'AlessandroYorba/Arcadia'
+    use 'AlessandroYorba/Breve'
+    use 'nanotech/jellybeans.vim'
+    use 'whatyouhide/vim-gotham'
+    use 'marcopaganini/termschool-vim-theme'
+    use 'iCyMind/NeoSolarized'
+    use 'alessandroyorba/despacio'
+    use 'sherifkandeel/vim-colors' -- name: vimbrains
 end)
 --}}}
 -- "general settings" {{{
 vim.cmd.colorscheme("sierra")
+vim.o.background = "dark"
+
+vim.g.airline_theme='zenburn'
+vim.g.airline_powerline_fonts=1
 
 vim.o.autoindent = true
 vim.o.tabstop = 4
@@ -47,7 +60,7 @@ vim.o.updatetime = 100
 
 vim.o.number = true
 -- }}}
--- "key bindings" {{{
+-- "keymaps" {{{
 vim.keymap.set('n', '<leader>b', ': TagbarToggle<cr>')
 vim.keymap.set('n', '<leader>s', ': set spell ! <cr>')
 
@@ -68,5 +81,8 @@ vim.keymap.set('n', '<S-M-l>', '<C-w><S-l>')
 
 -- Toggle relativenumber
 vim.keymap.set('n', '<leader>r', ': set relativenumber!<cr>')
+-- }}}
+-- "skeletons" {{{
+--- hmmm 🤔
 -- }}}
 -- vim:fdm=marker
