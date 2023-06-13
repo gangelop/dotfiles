@@ -83,6 +83,11 @@ vim.keymap.set('n', '<S-M-l>', '<C-w><S-l>')
 -- Toggle relativenumber
 vim.keymap.set('n', '<leader>r', ': set relativenumber!<cr>')
 
+-- nvim-lspconfig
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+
 -- }}}
 -- "skeletons" {{{
 vim.api.nvim_create_autocmd("BufNewFile", {
