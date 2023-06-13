@@ -8,10 +8,10 @@ require("packer").startup(function(use)
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
     use 'majutsushi/tagbar'
+    use 'neovim/nvim-lspconfig'
     --Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     --Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     --Plug 'nvie/vim-flake8'
-    --"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
     --Plug 'rust-lang/rust.vim'
     --Plug 'cespare/vim-toml'
     --Plug 'Glench/Vim-Jinja2-Syntax'
@@ -89,25 +89,51 @@ vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.html",
     command = "0r ~/.config/nvim/skeleton/skeleton.html| normal Gdd| 10G0",
 })
+
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.sh",
     command = "0r ~/.config/nvim/skeleton/skeleton.sh| normal G",
 })
+
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.zsh",
     command = "0r ~/.config/nvim/skeleton/skeleton.zsh| normal G",
 })
+
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.c",
     command = "0r ~/.config/nvim/skeleton/skeleton.c| normal Gddkk",
 })
+
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.pl",
     command = "0r ~/.config/nvim/skeleton/skeleton.pl| normal G",
 })
+
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.py",
     command = "0r ~/.config/nvim/skeleton/skeleton.py| normal G",
+})
+
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.go",
+    command = "0r ~/.config/nvim/skeleton/skeleton.go| normal Gdd6G$bb",
+})
+
+-- }}}
+-- "LSP" {{{
+local lspconfig = require('lspconfig')
+lspconfig.gopls.setup {}
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*.go",
+    command = "lua vim.lsp.buf.format()"
+})
+
+-- TODO: also run on TextChanged with undojoin maybe? Haven't solved it yet.
+vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
+    pattern = "*.go",
+    command = "lua vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })"
 })
 
 -- }}}
