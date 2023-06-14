@@ -86,7 +86,8 @@ vim.keymap.set('n', '<leader>r', ': set relativenumber!<cr>')
 -- nvim-lspconfig
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
+vim.keymap.set('n', '<leader>r', vim.lsp.buf.references, opts)
 
 -- }}}
 -- "skeletons" {{{
