@@ -127,6 +127,8 @@ vim.api.nvim_create_autocmd("BufNewFile", {
 -- }}}
 -- "LSP" {{{
 local lspconfig = require('lspconfig')
+
+-- pacman package: gopls
 lspconfig.gopls.setup {}
 
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -140,6 +142,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
     command = "lua vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })"
 })
 
+-- pacman package: lua-language-server
 lspconfig.lua_ls.setup {
   settings = {
     Lua = {
@@ -162,6 +165,9 @@ lspconfig.lua_ls.setup {
     },
   },
 }
+
+-- pacman package: python-lsp-server
+lspconfig.pylsp.setup {}
 
 -- }}}
 -- vim:fdm=marker
