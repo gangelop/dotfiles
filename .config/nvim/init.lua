@@ -64,6 +64,7 @@ vim.o.number = true
 -- "keymaps" {{{
 vim.keymap.set('n', '<leader>b', ': TagbarToggle<cr>')
 vim.keymap.set('n', '<leader>s', ': set spell ! <cr>')
+vim.keymap.set('n', '<leader>r', ': set relativenumber ! <cr>')
 
 vim.keymap.set('n', '<C-h>', ': tabprevious<cr>')
 vim.keymap.set('n', '<C-l>', ': tabnext<cr>')
@@ -80,14 +81,11 @@ vim.keymap.set('n', '<S-M-j>', '<C-w><S-j>')
 vim.keymap.set('n', '<S-M-k>', '<C-w><S-k>')
 vim.keymap.set('n', '<S-M-l>', '<C-w><S-l>')
 
--- Toggle relativenumber
-vim.keymap.set('n', '<leader>r', ': set relativenumber!<cr>')
-
 -- nvim-lspconfig
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', '<leader>r', vim.lsp.buf.references, opts)
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>f', vim.lsp.buf.references)
 
 -- }}}
 -- "skeletons" {{{
