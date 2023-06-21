@@ -166,7 +166,7 @@ lspconfig.lua_ls.setup {
   },
 }
 
--- pacman package: python-lsp-server
+-- pacman package: python-lsp-server, python-pyflakes (for errors)
 lspconfig.pylsp.setup {}
 
 -- }}}
