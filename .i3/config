@@ -258,7 +258,7 @@ client.urgent           #ffff00 #ffff00 #000000 #ffff00
 
 # general keyboard shortcuts
 bindsym Print exec maim "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
-bindsym ctrl+Print exec maim -s "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
+bindsym shift+Print exec maim -s "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
 bindsym $mod+mod1+t exec "nautilus"
 bindsym $mod+mod1+r exec "brave"
 bindsym $mod+mod1+f exec "firefox"
