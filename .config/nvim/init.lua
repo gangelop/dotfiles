@@ -137,6 +137,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 -- TODO: also run on TextChanged with undojoin maybe? Haven't solved it yet.
+-- TODO: BufWritePre doesn't work correctly because vim.lsp.buf.code_action() is asynchronous.
+-- TODO: see also https://github.com/neovim/neovim/issues/24168
 vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
     pattern = "*.go",
     command = "lua vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })"
