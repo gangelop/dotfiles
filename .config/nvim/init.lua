@@ -171,5 +171,8 @@ lspconfig.lua_ls.setup {
 -- pacman package: python-lsp-server, python-pyflakes (for errors)
 lspconfig.pylsp.setup {}
 
+-- pacman package: typescript-language-server
+lspconfig.tsserver.setup {}
+
 -- }}}
 -- vim:fdm=marker
