@@ -63,3 +63,5 @@ grml_theme_has_token virtual-env || \
 zstyle ':prompt:grml:left:setup' items rc virtual-env change-root user at host path vcs percent
 
 export PATH="$PATH:$HOME/.local/bin/:$HOME/go/bin"
+
+. env_parallel.zsh
