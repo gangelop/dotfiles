@@ -18,5 +18,4 @@ alias xxd="xxd -g1"
 alias d="docker"
 alias s=sudo
 alias gdb="gdb -q"
-alias btih="sed -r 's/.*btih:([0-9a-fA-F]{40}).*/\1/'"
 alias t=tree
