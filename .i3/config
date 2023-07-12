@@ -138,7 +138,7 @@ bindsym $mod+c move workspace to output right
 assign [class="^Skype$"] $ws2
 assign [class="^firefox$"] $ws3
 assign [class="^Brave-browser$"] $ws3
-assign [class="^Clementine$"] $ws9
+assign [class="^strawberry$"] $ws9
 
 
 # Hides vertical and horizontal borders when there's only one window.
@@ -263,7 +263,7 @@ bindsym $mod+mod1+t exec "nautilus"
 bindsym $mod+mod1+r exec "brave"
 bindsym $mod+mod1+f exec "firefox"
 bindsym $mod+mod1+c exec "chromium"
-bindsym $mod+m      exec "clementine -o"
+bindsym $mod+m      exec "strawberry -o"
 bindsym $mod+q      exec "bash ~/scripts/clipqr.sh"
 bindsym $mod+z      exec "pavucontrol"
 bindsym $mod+p      exec "rofi-pass"
