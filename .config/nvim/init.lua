@@ -9,6 +9,7 @@ require("packer").startup(function(use)
     use 'airblade/vim-gitgutter'
     use 'majutsushi/tagbar'
     use 'neovim/nvim-lspconfig'
+    use 'jparise/vim-graphql'
     --Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     --Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     --Plug 'nvie/vim-flake8'
