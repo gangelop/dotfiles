@@ -37,6 +37,8 @@ end)
 vim.cmd.colorscheme("sierra")
 vim.o.background = "dark"
 
+vim.o.pumblend = 5
+
 vim.g.airline_powerline_fonts=1
 
 vim.o.autoindent = true
