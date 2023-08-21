@@ -18,4 +18,4 @@ alias xxd="xxd -g1"
 alias d="docker"
 alias s=sudo
 alias gdb="gdb -q"
-alias t=tree
+alias t="tree --gitignore"
