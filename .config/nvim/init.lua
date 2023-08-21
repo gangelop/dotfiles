@@ -10,6 +10,15 @@ require("packer").startup(function(use)
     use 'majutsushi/tagbar'
     use 'neovim/nvim-lspconfig'
     use 'jparise/vim-graphql'
+    --use {
+    --    'nvim-treesitter/nvim-treesitter',
+    --    -- see: https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation#packernvim
+    --    run = function()
+    --        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+    --        ts_update()
+    --    end,
+    --}
+
     --Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     --Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     --Plug 'nvie/vim-flake8'
