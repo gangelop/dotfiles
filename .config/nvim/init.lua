@@ -1,7 +1,7 @@
 -- "packer" {{{
--- https://github.com/wbthomason/packer.nvim
--- install+update from AUR: nvim-packer-git
+-- installation: https://github.com/wbthomason/packer.nvim#quickstart
 require("packer").startup(function(use)
+    use 'wbthomason/packer.nvim'
     use 'ctrlpvim/ctrlp.vim'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
