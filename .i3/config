@@ -257,8 +257,8 @@ client.unfocused        #222222 #222222 #888888 #292d2e
 client.urgent           #ffff00 #ffff00 #000000 #ffff00
 
 # general keyboard shortcuts
-bindsym Print exec maim "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
-bindsym shift+Print exec maim -s "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
+bindsym Print exec maim -u "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
+bindsym shift+Print exec maim -u -s "$HOME/pictures/screenshots/$(date +%Y-%m-%d-%s).png"
 bindsym $mod+mod1+t exec "nautilus"
 bindsym $mod+mod1+r exec "brave"
 bindsym $mod+mod1+f exec "firefox"
@@ -279,7 +279,7 @@ bindsym ctrl+shift+period   exec "dunstctl context"
 exec --no-startup-id "bash ~/.fehbg"
 
 # start picom compositor
-exec --no-startup-id "picom --config ~/.config/compton.conf"
+exec --no-startup-id "picom --config ~/.config/picom.conf"
 
 # start notification daemon
 exec --no-startup-id "dunst"
