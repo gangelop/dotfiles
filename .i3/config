@@ -146,9 +146,10 @@ assign [class="^strawberry$"] $ws9
 hide_edge_borders both
 
 # Always float windows with title 'clipqr'.
-# This is for the clipqr.sh script which generates a QR code from clipboard.
+# "clipqr" is for the clipqr.sh script which generates a QR code from clipboard.
 for_window [title="^clipqr$"] floating enable
 for_window [title="pinentry"] floating enable
+for_window [title="Color Picker"] floating enable
 
 # this works for Firefox and probably other programs too
 #for_window [instance="^Download"] floating enable
