@@ -482,7 +482,12 @@ end
 --  define the property 'filetypes' to the map in question.
 local servers = {
   clangd = {},
-  gopls = {},
+  gopls = {
+    -- Not sure how to make this work...
+    -- https://github.com/golang/tools/blob/master/gopls/doc/features.md
+    -- filetypes = { "go", "gomod", "gowork", "gotmpl", "html" },
+    -- templateExtensions = { 'html' }
+  },
   pyright = {},
   tsserver = {},
   eslint = {},
