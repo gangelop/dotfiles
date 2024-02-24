@@ -3,8 +3,6 @@ dotfiles
 
 My various dotfiles
 
-![obligatory screenshot](rice.png)
-
 ## Usage
 
 The `configure` script is meant to work with **zsh only**.
