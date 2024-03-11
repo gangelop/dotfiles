@@ -68,6 +68,21 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
+  {
+    'stevearc/aerial.nvim',
+    opts = {
+      layout = {
+        default_direction = "prefer_right"
+      }
+    },
+    vim.keymap.set('n', '<leader>t', ':AerialToggle<Enter>'),
+    -- Optional dependencies
+    dependencies = {
+       'nvim-treesitter/nvim-treesitter',
+       'nvim-tree/nvim-web-devicons'
+    },
+  },
+
   -- Git related plugins
   'tpope/vim-fugitive',
 
@@ -196,6 +211,7 @@ require('lazy').setup({
     branch = '0.1.x',
     dependencies = {
       'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
       -- Fuzzy Finder Algorithm which requires local dependencies to be built.
       -- Only load if `make` is available. Make sure you have the system
       -- requirements installed.
