@@ -29,6 +29,10 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[bitcoin-fng]
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
+interval=360
+
 [kraken-ticker]
 #label=BTC 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
@@ -40,11 +44,11 @@ interval=10
 label=disk: 
 interval=30
 
-[external-ip]
-command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
-label=ip: 
-color=#00FF00
-interval=10
+#[external-ip]
+#command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
+#label=ip:
+#color=#00FF00
+#interval=10
 
 [load_average]
 #label=
