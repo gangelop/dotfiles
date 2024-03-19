@@ -135,9 +135,6 @@ bindsym $mod+x move workspace to output left
 bindsym $mod+c move workspace to output right
 
 # Assign specific applications to workspaces
-assign [class="^Skype$"] $ws2
-assign [class="^firefox$"] $ws3
-assign [class="^Brave-browser$"] $ws3
 assign [class="^strawberry$"] $ws9
 
 
