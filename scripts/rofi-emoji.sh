@@ -74,7 +74,7 @@ function download() {
 
 function display() {
     emoji=$(grep -v '#' "$emoji_file" | grep -v '^[[:space:]]*$')
-    line=$(echo "$emoji" | rofi -dmenu -i -p emoji -kb-custom-1 Ctrl+c "$@")
+    line=$(echo "$emoji" | rofi -dmenu -i -p emoji -kb-custom-1 Alt+c "$@")
     exit_code=$?
 
     IFS=" " read -r -a line <<< "$line"
