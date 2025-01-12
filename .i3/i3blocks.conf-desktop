@@ -34,9 +34,15 @@ command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
 interval=360
 
 [kraken-ticker]
-#label=BTC 
+label=USD 
 command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME
-color=#8080ff
+color=#fa5f5f
+interval=10
+
+[kraken-ticker]
+label=EUR 
+command=/home/george/git/i3blocks-blocklets/$BLOCK_NAME XXBTZEUR
+color=#8686c5
 interval=10
 
 [disk]
