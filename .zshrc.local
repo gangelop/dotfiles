@@ -65,3 +65,5 @@ zstyle ':prompt:grml:left:setup' items rc virtual-env change-root user at host p
 export PATH="$PATH:$HOME/.local/bin/:$HOME/go/bin"
 
 . env_parallel.zsh
+
+export BORG_REMOTE_PATH=borg14
