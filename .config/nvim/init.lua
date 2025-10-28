@@ -504,7 +504,7 @@ local servers = {
     -- templateExtensions = { 'html' }
   },
   pyright = {},
-  tsserver = {},
+  -- tsserver = {},
   eslint = {},
   html = { filetypes = { 'html', 'twig', 'hbs'} },
 
